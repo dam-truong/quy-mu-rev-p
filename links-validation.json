@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "checked": 71,
+  "checked": 72,
   "links": [
     {
       "from": "blueprint\\index.html",
@@ -73,6 +73,10 @@
     {
       "from": "HUONG-DAN.html",
       "link": "previews/khu-ba-tuong-sau.png"
+    },
+    {
+      "from": "HUONG-DAN.html",
+      "link": "iterations/region-at-600.json"
     },
     {
       "from": "HUONG-DAN.html",
