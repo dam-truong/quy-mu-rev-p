@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "checked": 68,
+  "checked": 71,
   "links": [
     {
       "from": "blueprint\\index.html",
@@ -49,6 +49,10 @@
     {
       "from": "blueprint\\K-08-nha-khan.html",
       "link": "../emergency-plan.json"
+    },
+    {
+      "from": "HUONG-DAN.html",
+      "link": "HUONG-DAN-THI-CONG-VA-CO-CHE-CUA-REV-P.md"
     },
     {
       "from": "HUONG-DAN.html",
@@ -153,6 +157,10 @@
     {
       "from": "index.html",
       "link": "HUONG-DAN.html"
+    },
+    {
+      "from": "index.html",
+      "link": "HUONG-DAN-THI-CONG-VA-CO-CHE-CUA-REV-P.md"
     },
     {
       "from": "julius\\final\\REPORT.html",
@@ -273,6 +281,10 @@
     {
       "from": "model-360.html",
       "link": "HUONG-DAN.html"
+    },
+    {
+      "from": "model-360.html",
+      "link": "HUONG-DAN-THI-CONG-VA-CO-CHE-CUA-REV-P.md"
     }
   ]
 }
