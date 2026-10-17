@@ -1,0 +1,311 @@
+{
+  "settings": {
+    "revision": "P",
+    "basedOn": "O",
+    "thresholdSeconds": 900,
+    "speedMetersPerSecond": 1.2,
+    "directionPermutations": 24,
+    "searchSeed": 20261017,
+    "iterationsPerRing": 60000,
+    "maxRing": 9
+  },
+  "baseline": {
+    "values": [
+      855,
+      891,
+      875,
+      881,
+      853,
+      803,
+      821,
+      871,
+      821,
+      827,
+      827,
+      859,
+      817,
+      901,
+      821,
+      833,
+      805,
+      875,
+      875,
+      857,
+      817,
+      901,
+      873,
+      875
+    ],
+    "min": 803,
+    "mean": 851.4166666666666,
+    "score": 832.7995833333333,
+    "minSeconds": 613.4027777777777,
+    "shape": {
+      "removed": 0,
+      "added": 0
+    }
+  },
+  "oneWayDoors": 22,
+  "rotatingWalls": 4,
+  "emergencyPanels": 1,
+  "coreCellBounds": [
+    4,
+    5,
+    8,
+    9
+  ],
+  "rings": [
+    {
+      "ring": 0,
+      "allowedEdges": 24,
+      "allowedCells": 16,
+      "iterations": 11465,
+      "valid": 2405,
+      "evaluated": 861,
+      "startMinimumSeconds": 613.4027777777777,
+      "bestMinimumSeconds": 564.5138888888889,
+      "budgetSeconds": 40,
+      "elapsedSeconds": 40.04
+    },
+    {
+      "ring": 1,
+      "allowedEdges": 45,
+      "allowedCells": 28,
+      "iterations": 11217,
+      "valid": 2589,
+      "evaluated": 994,
+      "startMinimumSeconds": 564.5138888888889,
+      "bestMinimumSeconds": 564.5138888888889,
+      "budgetSeconds": 40,
+      "elapsedSeconds": 40.025
+    },
+    {
+      "ring": 2,
+      "allowedEdges": 69,
+      "allowedCells": 42,
+      "iterations": 11194,
+      "valid": 2577,
+      "evaluated": 950,
+      "startMinimumSeconds": 564.5138888888889,
+      "bestMinimumSeconds": 564.5138888888889,
+      "budgetSeconds": 40,
+      "elapsedSeconds": 40.001
+    },
+    {
+      "ring": 3,
+      "allowedEdges": 92,
+      "allowedCells": 55,
+      "iterations": 31562,
+      "valid": 7984,
+      "evaluated": 3076,
+      "startMinimumSeconds": 564.5138888888889,
+      "bestMinimumSeconds": 564.5138888888889,
+      "budgetSeconds": 90,
+      "elapsedSeconds": 90.009
+    },
+    {
+      "ring": 4,
+      "allowedEdges": 116,
+      "allowedCells": 68,
+      "iterations": 39212,
+      "valid": 9518,
+      "evaluated": 3146,
+      "startMinimumSeconds": 564.5138888888889,
+      "bestMinimumSeconds": 564.5138888888889,
+      "budgetSeconds": 90,
+      "elapsedSeconds": 90.026
+    },
+    {
+      "ring": 5,
+      "allowedEdges": 126,
+      "allowedCells": 73,
+      "iterations": 41340,
+      "valid": 10322,
+      "evaluated": 3330,
+      "startMinimumSeconds": 564.5138888888889,
+      "bestMinimumSeconds": 564.5138888888889,
+      "budgetSeconds": 90,
+      "elapsedSeconds": 90.002
+    },
+    {
+      "ring": 6,
+      "allowedEdges": 133,
+      "allowedCells": 77,
+      "iterations": 41335,
+      "valid": 9911,
+      "evaluated": 2900,
+      "startMinimumSeconds": 564.5138888888889,
+      "bestMinimumSeconds": 576.7361111111111,
+      "budgetSeconds": 90,
+      "elapsedSeconds": 90.007
+    },
+    {
+      "ring": 7,
+      "allowedEdges": 138,
+      "allowedCells": 80,
+      "iterations": 41290,
+      "valid": 10180,
+      "evaluated": 3052,
+      "startMinimumSeconds": 576.7361111111111,
+      "bestMinimumSeconds": 576.7361111111111,
+      "budgetSeconds": 90,
+      "elapsedSeconds": 90.017
+    },
+    {
+      "ring": 8,
+      "allowedEdges": 142,
+      "allowedCells": 83,
+      "iterations": 38892,
+      "valid": 9414,
+      "evaluated": 2777,
+      "startMinimumSeconds": 576.7361111111111,
+      "bestMinimumSeconds": 576.7361111111111,
+      "budgetSeconds": 90,
+      "elapsedSeconds": 90.011
+    },
+    {
+      "ring": 9,
+      "allowedEdges": 145,
+      "allowedCells": 85,
+      "iterations": 45387,
+      "valid": 10867,
+      "evaluated": 2810,
+      "startMinimumSeconds": 576.7361111111111,
+      "bestMinimumSeconds": 576.7361111111111,
+      "budgetSeconds": 90,
+      "elapsedSeconds": 90.02
+    }
+  ],
+  "method": "Seeded simulated annealing; expand by Manhattan cell rings, fixed room doors, unchanged counts and fixed emergency panel. Finite heuristic search, not an infeasibility proof.",
+  "status": "BEST_FOUND_BELOW_TARGET",
+  "redesigned": true,
+  "shape": {
+    "removed": 2,
+    "added": 3
+  },
+  "shortfallSeconds": 283.54166666666663,
+  "elapsedSeconds": 750.165,
+  "finalSelection": {
+    "source": "refinement",
+    "actualChangedRing": 5,
+    "minimumSeconds": 616.4583333333334
+  },
+  "refinement": {
+    "seed": 170026,
+    "initial": {
+      "values": [
+        791,
+        855,
+        841,
+        817,
+        787,
+        739,
+        757,
+        805,
+        755,
+        763,
+        761,
+        849,
+        753,
+        865,
+        809,
+        821,
+        787,
+        835,
+        837,
+        793,
+        753,
+        867,
+        837,
+        835
+      ],
+      "min": 739,
+      "mean": 804.6666666666666,
+      "score": 779.2333333333333,
+      "minSeconds": 564.5138888888889
+    },
+    "rings": [
+      {
+        "ring": 0,
+        "startingSeconds": 564.5138888888889,
+        "bestMinimumSeconds": 564.5138888888889,
+        "iterations": 18492,
+        "evaluated": 560,
+        "elapsedSeconds": 30.042
+      },
+      {
+        "ring": 1,
+        "startingSeconds": 564.5138888888889,
+        "bestMinimumSeconds": 564.5138888888889,
+        "iterations": 7397,
+        "evaluated": 572,
+        "elapsedSeconds": 30.041
+      },
+      {
+        "ring": 2,
+        "startingSeconds": 564.5138888888889,
+        "bestMinimumSeconds": 584.375,
+        "iterations": 7171,
+        "evaluated": 552,
+        "elapsedSeconds": 30.011
+      },
+      {
+        "ring": 3,
+        "startingSeconds": 584.375,
+        "bestMinimumSeconds": 584.375,
+        "iterations": 7952,
+        "evaluated": 554,
+        "elapsedSeconds": 30.031
+      },
+      {
+        "ring": 4,
+        "startingSeconds": 584.375,
+        "bestMinimumSeconds": 584.375,
+        "iterations": 8668,
+        "evaluated": 538,
+        "elapsedSeconds": 30.031
+      },
+      {
+        "ring": 5,
+        "startingSeconds": 584.375,
+        "bestMinimumSeconds": 584.375,
+        "iterations": 10308,
+        "evaluated": 534,
+        "elapsedSeconds": 30.003
+      },
+      {
+        "ring": 6,
+        "startingSeconds": 584.375,
+        "bestMinimumSeconds": 601.1805555555555,
+        "iterations": 10114,
+        "evaluated": 516,
+        "elapsedSeconds": 30.044
+      },
+      {
+        "ring": 7,
+        "startingSeconds": 601.1805555555555,
+        "bestMinimumSeconds": 607.2916666666667,
+        "iterations": 11144,
+        "evaluated": 501,
+        "elapsedSeconds": 30.057
+      },
+      {
+        "ring": 8,
+        "startingSeconds": 607.2916666666667,
+        "bestMinimumSeconds": 607.2916666666667,
+        "iterations": 12799,
+        "evaluated": 495,
+        "elapsedSeconds": 30.014
+      },
+      {
+        "ring": 9,
+        "startingSeconds": 607.2916666666667,
+        "bestMinimumSeconds": 616.4583333333334,
+        "iterations": 11890,
+        "evaluated": 487,
+        "elapsedSeconds": 30.059
+      }
+    ],
+    "purpose": "Additional shape-preserving search; no mechanism relocation in this pass."
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "thresholdSeconds": 600,
+  "method": "Restore all edges outside each smaller ring to REV O; validate unchanged mechanism count, shape, return paths and sweep release. This is a bounded subset check, not a global minimality proof.",
+  "trials": [
+    {
+      "ring": 0,
+      "valid": true,
+      "minimumSeconds": 552.2916666666667
+    },
+    {
+      "ring": 1,
+      "valid": true,
+      "minimumSeconds": 556.875
+    },
+    {
+      "ring": 2,
+      "valid": false,
+      "minimumSeconds": null
+    },
+    {
+      "ring": 3,
+      "valid": false,
+      "minimumSeconds": null
+    },
+    {
+      "ring": 4,
+      "valid": false,
+      "minimumSeconds": null
+    },
+    {
+      "ring": 5,
+      "valid": true,
+      "minimumSeconds": 616.4583333333334
+    }
+  ],
+  "selectedRing": 5,
+  "minimumSeconds": 616.4583333333334
+}

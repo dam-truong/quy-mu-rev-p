@@ -1,0 +1,157 @@
+{
+  "purpose": "Supplementary tests only; main 24 memory/frontier acceptance is unchanged.",
+  "speedMetersPerSecond": 1.2,
+  "addedDelaysSeconds": 0,
+  "headingAtRoomExit": "Facing outward from the physical room door; no puzzle or interior walk time added.",
+  "loopDetection": "Exact repeated state (phase, cell, heading); objective completion is processed before checking for repetition.",
+  "completedRuns": 0,
+  "loopingRuns": 8,
+  "runs": [
+    {
+      "strategy": "wall-left-N",
+      "hand": "left",
+      "initialHeading": "N",
+      "status": "FINITE_STATE_LOOP",
+      "completed": false,
+      "roomsCompleted": 0,
+      "steps": 70,
+      "meters": 64.16666666666666,
+      "seconds": 53.472222222222214,
+      "legs": [],
+      "loop": {
+        "state": "0|0,6|3",
+        "firstSeenAtStep": 62,
+        "repeatedAtStep": 70,
+        "periodSteps": 8
+      }
+    },
+    {
+      "strategy": "wall-left-E",
+      "hand": "left",
+      "initialHeading": "E",
+      "status": "FINITE_STATE_LOOP",
+      "completed": false,
+      "roomsCompleted": 0,
+      "steps": 70,
+      "meters": 64.16666666666666,
+      "seconds": 53.472222222222214,
+      "legs": [],
+      "loop": {
+        "state": "0|0,6|3",
+        "firstSeenAtStep": 62,
+        "repeatedAtStep": 70,
+        "periodSteps": 8
+      }
+    },
+    {
+      "strategy": "wall-left-S",
+      "hand": "left",
+      "initialHeading": "S",
+      "status": "FINITE_STATE_LOOP",
+      "completed": false,
+      "roomsCompleted": 0,
+      "steps": 70,
+      "meters": 64.16666666666666,
+      "seconds": 53.472222222222214,
+      "legs": [],
+      "loop": {
+        "state": "0|0,6|3",
+        "firstSeenAtStep": 62,
+        "repeatedAtStep": 70,
+        "periodSteps": 8
+      }
+    },
+    {
+      "strategy": "wall-left-W",
+      "hand": "left",
+      "initialHeading": "W",
+      "status": "FINITE_STATE_LOOP",
+      "completed": false,
+      "roomsCompleted": 0,
+      "steps": 70,
+      "meters": 64.16666666666666,
+      "seconds": 53.472222222222214,
+      "legs": [],
+      "loop": {
+        "state": "0|0,6|3",
+        "firstSeenAtStep": 62,
+        "repeatedAtStep": 70,
+        "periodSteps": 8
+      }
+    },
+    {
+      "strategy": "wall-right-N",
+      "hand": "right",
+      "initialHeading": "N",
+      "status": "FINITE_STATE_LOOP",
+      "completed": false,
+      "roomsCompleted": 0,
+      "steps": 13,
+      "meters": 11.916666666666666,
+      "seconds": 9.930555555555555,
+      "legs": [],
+      "loop": {
+        "state": "0|3,8|3",
+        "firstSeenAtStep": 1,
+        "repeatedAtStep": 13,
+        "periodSteps": 12
+      }
+    },
+    {
+      "strategy": "wall-right-E",
+      "hand": "right",
+      "initialHeading": "E",
+      "status": "FINITE_STATE_LOOP",
+      "completed": false,
+      "roomsCompleted": 0,
+      "steps": 13,
+      "meters": 11.916666666666666,
+      "seconds": 9.930555555555555,
+      "legs": [],
+      "loop": {
+        "state": "0|3,8|3",
+        "firstSeenAtStep": 1,
+        "repeatedAtStep": 13,
+        "periodSteps": 12
+      }
+    },
+    {
+      "strategy": "wall-right-S",
+      "hand": "right",
+      "initialHeading": "S",
+      "status": "FINITE_STATE_LOOP",
+      "completed": false,
+      "roomsCompleted": 0,
+      "steps": 13,
+      "meters": 11.916666666666666,
+      "seconds": 9.930555555555555,
+      "legs": [],
+      "loop": {
+        "state": "0|3,8|3",
+        "firstSeenAtStep": 1,
+        "repeatedAtStep": 13,
+        "periodSteps": 12
+      }
+    },
+    {
+      "strategy": "wall-right-W",
+      "hand": "right",
+      "initialHeading": "W",
+      "status": "FINITE_STATE_LOOP",
+      "completed": false,
+      "roomsCompleted": 0,
+      "steps": 12,
+      "meters": 11,
+      "seconds": 9.166666666666668,
+      "legs": [],
+      "loop": {
+        "state": "0|4,8|3",
+        "firstSeenAtStep": 0,
+        "repeatedAtStep": 12,
+        "periodSteps": 12
+      }
+    }
+  ],
+  "sourcePath": "C:\\Users\\damtr\\OneDrive\\Documents\\Escape Room\\render\\quy-mu-rev-P\\src\\layout.js",
+  "sourceSHA256": "4bfa818db193497c01c28394ab6103fea1207aca01d534ef65c586cb47f82a6b"
+}

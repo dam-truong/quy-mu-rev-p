@@ -1,0 +1,1 @@
+{"revision":"P","basedOn":"O","thresholdSeconds":600,"speedMetersPerSecond":1.2,"directionPermutations":24,"searchSeed":20261017,"iterationsPerRing":60000,"maxRing":9,"originalSearchThresholdSeconds":900,"thresholdChangeReason":"User accepted results above 600 seconds on 2026-10-17."}

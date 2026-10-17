@@ -1,0 +1,122 @@
+{
+  "status": "PASS_CONCEPT_GRAPH_WITH_RELEASES",
+  "panelCount": 1,
+  "minimumPanelCountProven": false,
+  "optimization": {
+    "method": "Iterative-deepening exact cut branching over shared component merges",
+    "exploredStates": 1,
+    "searchStateLimit": 500000,
+    "searchLimitReached": false,
+    "candidateStableWallPanels": 8,
+    "greedyUpperBound": 1
+  },
+  "panels": [
+    {
+      "id": "E1",
+      "a": [
+        2,
+        7
+      ],
+      "b": [
+        3,
+        7
+      ],
+      "segmentCells": [
+        3,
+        7,
+        3,
+        8
+      ],
+      "segmentMeters": [
+        2.75,
+        6.416666666666666,
+        2.75,
+        7.333333333333333
+      ],
+      "clearPanelPitchMeters": 0.9166666666666666,
+      "normalState": "closed",
+      "openForAllTransitions": true,
+      "bridgesComponentCutsAtTransitions": [
+        1
+      ]
+    }
+  ],
+  "validation": [
+    {
+      "fromPhase": 0,
+      "toPhase": 1,
+      "componentsWithoutPanels": 4,
+      "previouslyReachableComponents": 1,
+      "beforeRotationWithReleases": {
+        "previouslyReachableNodes": 80,
+        "nodesWithReturn": 80,
+        "trapped": []
+      },
+      "duringConservativeSweep": {
+        "previouslyReachableNodes": 80,
+        "nodesWithReturn": 80,
+        "trapped": []
+      },
+      "afterRotationBeforeRelock": {
+        "previouslyReachableNodes": 80,
+        "nodesWithReturn": 80,
+        "trapped": []
+      }
+    },
+    {
+      "fromPhase": 1,
+      "toPhase": 2,
+      "componentsWithoutPanels": 3,
+      "previouslyReachableComponents": 2,
+      "beforeRotationWithReleases": {
+        "previouslyReachableNodes": 84,
+        "nodesWithReturn": 84,
+        "trapped": []
+      },
+      "duringConservativeSweep": {
+        "previouslyReachableNodes": 84,
+        "nodesWithReturn": 84,
+        "trapped": []
+      },
+      "afterRotationBeforeRelock": {
+        "previouslyReachableNodes": 84,
+        "nodesWithReturn": 84,
+        "trapped": []
+      }
+    },
+    {
+      "fromPhase": 2,
+      "toPhase": 3,
+      "componentsWithoutPanels": 1,
+      "previouslyReachableComponents": 1,
+      "beforeRotationWithReleases": {
+        "previouslyReachableNodes": 85,
+        "nodesWithReturn": 85,
+        "trapped": []
+      },
+      "duringConservativeSweep": {
+        "previouslyReachableNodes": 85,
+        "nodesWithReturn": 85,
+        "trapped": []
+      },
+      "afterRotationBeforeRelock": {
+        "previouslyReachableNodes": 85,
+        "nodesWithReturn": 85,
+        "trapped": []
+      }
+    }
+  ],
+  "normalGameplayConnectivityChanged": false,
+  "assumptions": [
+    "This is a conceptual graph release plan, not mechanical certification.",
+    "Before any rotation: pause pursuit; open ALL listed bypass panels; release ALL one-way restrictions; verify releases.",
+    "Keep bypasses and one-way gates released throughout the sweep and until final position is confirmed.",
+    "Occupancy sensors must prevent rotation while a person is inside any swept zone; obstruction/emergency stop must halt motion.",
+    "Both old and new closed wall positions are treated as blocked simultaneously during the conservative test.",
+    "Normal play graphs keep these panels closed; opening them during gameplay would change difficulty.",
+    "When emergency release is active, sequential gameplay access may change temporarily; restore only after the controlled transition ends."
+  ],
+  "retainedBaselinePanels": true,
+  "sourcePath": "C:\\Users\\damtr\\OneDrive\\Documents\\Escape Room\\render\\quy-mu-rev-P\\src\\layout.js",
+  "sourceSHA256": "4bfa818db193497c01c28394ab6103fea1207aca01d534ef65c586cb47f82a6b"
+}

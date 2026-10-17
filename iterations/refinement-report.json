@@ -1,0 +1,118 @@
+{
+  "seed": 170026,
+  "initial": {
+    "values": [
+      791,
+      855,
+      841,
+      817,
+      787,
+      739,
+      757,
+      805,
+      755,
+      763,
+      761,
+      849,
+      753,
+      865,
+      809,
+      821,
+      787,
+      835,
+      837,
+      793,
+      753,
+      867,
+      837,
+      835
+    ],
+    "min": 739,
+    "mean": 804.6666666666666,
+    "score": 779.2333333333333,
+    "minSeconds": 564.5138888888889
+  },
+  "rings": [
+    {
+      "ring": 0,
+      "startingSeconds": 564.5138888888889,
+      "bestMinimumSeconds": 564.5138888888889,
+      "iterations": 18492,
+      "evaluated": 560,
+      "elapsedSeconds": 30.042
+    },
+    {
+      "ring": 1,
+      "startingSeconds": 564.5138888888889,
+      "bestMinimumSeconds": 564.5138888888889,
+      "iterations": 7397,
+      "evaluated": 572,
+      "elapsedSeconds": 30.041
+    },
+    {
+      "ring": 2,
+      "startingSeconds": 564.5138888888889,
+      "bestMinimumSeconds": 584.375,
+      "iterations": 7171,
+      "evaluated": 552,
+      "elapsedSeconds": 30.011
+    },
+    {
+      "ring": 3,
+      "startingSeconds": 584.375,
+      "bestMinimumSeconds": 584.375,
+      "iterations": 7952,
+      "evaluated": 554,
+      "elapsedSeconds": 30.031
+    },
+    {
+      "ring": 4,
+      "startingSeconds": 584.375,
+      "bestMinimumSeconds": 584.375,
+      "iterations": 8668,
+      "evaluated": 538,
+      "elapsedSeconds": 30.031
+    },
+    {
+      "ring": 5,
+      "startingSeconds": 584.375,
+      "bestMinimumSeconds": 584.375,
+      "iterations": 10308,
+      "evaluated": 534,
+      "elapsedSeconds": 30.003
+    },
+    {
+      "ring": 6,
+      "startingSeconds": 584.375,
+      "bestMinimumSeconds": 601.1805555555555,
+      "iterations": 10114,
+      "evaluated": 516,
+      "elapsedSeconds": 30.044
+    },
+    {
+      "ring": 7,
+      "startingSeconds": 601.1805555555555,
+      "bestMinimumSeconds": 607.2916666666667,
+      "iterations": 11144,
+      "evaluated": 501,
+      "elapsedSeconds": 30.057
+    },
+    {
+      "ring": 8,
+      "startingSeconds": 607.2916666666667,
+      "bestMinimumSeconds": 607.2916666666667,
+      "iterations": 12799,
+      "evaluated": 495,
+      "elapsedSeconds": 30.014
+    },
+    {
+      "ring": 9,
+      "startingSeconds": 607.2916666666667,
+      "bestMinimumSeconds": 616.4583333333334,
+      "iterations": 11890,
+      "evaluated": 487,
+      "elapsedSeconds": 30.059
+    }
+  ],
+  "purpose": "Additional shape-preserving search; no mechanism relocation in this pass."
+}

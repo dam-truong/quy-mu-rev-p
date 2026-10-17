@@ -1,0 +1,12 @@
+{"step":1,"phase":0,"from":"4,8","to":"3,8","headingBefore":"W","headingAfter":"W","meters":0.9166666666666666,"totalMeters":0.9166666666666666,"simulatedSeconds":0.7638888888888888}
+{"step":2,"phase":0,"from":"3,8","to":"3,7","headingBefore":"W","headingAfter":"N","meters":0.9166666666666666,"totalMeters":1.8333333333333333,"simulatedSeconds":1.5277777777777777}
+{"step":3,"phase":0,"from":"3,7","to":"3,8","headingBefore":"N","headingAfter":"S","meters":0.9166666666666666,"totalMeters":2.75,"simulatedSeconds":2.291666666666667}
+{"step":4,"phase":0,"from":"3,8","to":"2,8","headingBefore":"S","headingAfter":"W","meters":0.9166666666666666,"totalMeters":3.6666666666666665,"simulatedSeconds":3.0555555555555554}
+{"step":5,"phase":0,"from":"2,8","to":"2,7","headingBefore":"W","headingAfter":"N","meters":0.9166666666666666,"totalMeters":4.583333333333333,"simulatedSeconds":3.819444444444444}
+{"step":6,"phase":0,"from":"2,7","to":"2,6","headingBefore":"N","headingAfter":"N","meters":0.9166666666666666,"totalMeters":5.5,"simulatedSeconds":4.583333333333334}
+{"step":7,"phase":0,"from":"2,6","to":"3,6","headingBefore":"N","headingAfter":"E","meters":0.9166666666666666,"totalMeters":6.416666666666666,"simulatedSeconds":5.347222222222222}
+{"step":8,"phase":0,"from":"3,6","to":"4,6","headingBefore":"E","headingAfter":"E","meters":0.9166666666666666,"totalMeters":7.333333333333333,"simulatedSeconds":6.111111111111111}
+{"step":9,"phase":0,"from":"4,6","to":"4,7","headingBefore":"E","headingAfter":"S","meters":0.9166666666666666,"totalMeters":8.25,"simulatedSeconds":6.875}
+{"step":10,"phase":0,"from":"4,7","to":"5,7","headingBefore":"S","headingAfter":"E","meters":0.9166666666666666,"totalMeters":9.166666666666666,"simulatedSeconds":7.638888888888888}
+{"step":11,"phase":0,"from":"5,7","to":"5,8","headingBefore":"E","headingAfter":"S","meters":0.9166666666666666,"totalMeters":10.083333333333332,"simulatedSeconds":8.402777777777777}
+{"step":12,"phase":0,"from":"5,8","to":"4,8","headingBefore":"S","headingAfter":"W","meters":0.9166666666666666,"totalMeters":11,"simulatedSeconds":9.166666666666668}

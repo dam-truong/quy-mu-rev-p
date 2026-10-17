@@ -1,0 +1,278 @@
+{
+  "status": "PASS",
+  "checked": 68,
+  "links": [
+    {
+      "from": "blueprint\\index.html",
+      "link": "../model-360.html"
+    },
+    {
+      "from": "blueprint\\index.html",
+      "link": "../julius/final/REPORT.html"
+    },
+    {
+      "from": "blueprint\\index.html",
+      "link": "K-08-nha-khan.html"
+    },
+    {
+      "from": "blueprint\\index.html",
+      "link": "../HUONG-DAN.html"
+    },
+    {
+      "from": "blueprint\\index.html",
+      "link": "K-01-mat-bang-tuong.png"
+    },
+    {
+      "from": "blueprint\\index.html",
+      "link": "K-02-khoi-tuong.png"
+    },
+    {
+      "from": "blueprint\\index.html",
+      "link": "K-03-tuyen-truyen.png"
+    },
+    {
+      "from": "blueprint\\index.html",
+      "link": "K-04-loi-gia-dai.png"
+    },
+    {
+      "from": "blueprint\\index.html",
+      "link": "K-05-he-thong-khoa.png"
+    },
+    {
+      "from": "blueprint\\index.html",
+      "link": "K-06-chu-thich-co-che.png"
+    },
+    {
+      "from": "blueprint\\index.html",
+      "link": "K-07-thanh-tra-julius.png"
+    },
+    {
+      "from": "blueprint\\K-08-nha-khan.html",
+      "link": "../emergency-plan.json"
+    },
+    {
+      "from": "HUONG-DAN.html",
+      "link": "model-360.html"
+    },
+    {
+      "from": "HUONG-DAN.html",
+      "link": "blueprint/index.html"
+    },
+    {
+      "from": "HUONG-DAN.html",
+      "link": "julius/final/REPORT.html"
+    },
+    {
+      "from": "HUONG-DAN.html",
+      "link": "previews/khu-ba-tuong-truoc.png"
+    },
+    {
+      "from": "HUONG-DAN.html",
+      "link": "previews/khu-ba-tuong-sau.png"
+    },
+    {
+      "from": "HUONG-DAN.html",
+      "link": "iterations/final-selected.json"
+    },
+    {
+      "from": "HUONG-DAN.html",
+      "link": "constraint-validation.json"
+    },
+    {
+      "from": "HUONG-DAN.html",
+      "link": "julius/final/supplementary/wall-followers.json"
+    },
+    {
+      "from": "HUONG-DAN.html",
+      "link": "previews/ra-lang-ngang-mat.png"
+    },
+    {
+      "from": "HUONG-DAN.html",
+      "link": "model-360.html"
+    },
+    {
+      "from": "HUONG-DAN.html",
+      "link": "blueprint/index.html"
+    },
+    {
+      "from": "HUONG-DAN.html",
+      "link": "julius/final/REPORT.html"
+    },
+    {
+      "from": "HUONG-DAN.html",
+      "link": "julius/final/report.json"
+    },
+    {
+      "from": "HUONG-DAN.html",
+      "link": "julius/final/independent-review.json"
+    },
+    {
+      "from": "HUONG-DAN.html",
+      "link": "constraint-validation.json"
+    },
+    {
+      "from": "HUONG-DAN.html",
+      "link": "render-validation.json"
+    },
+    {
+      "from": "HUONG-DAN.html",
+      "link": "emergency-plan.json"
+    },
+    {
+      "from": "HUONG-DAN.html",
+      "link": "iterations/search-report.json"
+    },
+    {
+      "from": "HUONG-DAN.html",
+      "link": "Quy-Mu-REV-P-S0.glb"
+    },
+    {
+      "from": "HUONG-DAN.html",
+      "link": "Quy-Mu-REV-P-S1.glb"
+    },
+    {
+      "from": "HUONG-DAN.html",
+      "link": "Quy-Mu-REV-P-S2.glb"
+    },
+    {
+      "from": "HUONG-DAN.html",
+      "link": "Quy-Mu-REV-P-S3.glb"
+    },
+    {
+      "from": "index.html",
+      "link": "Quy-Mu-REV-P.zip"
+    },
+    {
+      "from": "index.html",
+      "link": "blueprint/index.html"
+    },
+    {
+      "from": "index.html",
+      "link": "julius/final/REPORT.html"
+    },
+    {
+      "from": "index.html",
+      "link": "HUONG-DAN.html"
+    },
+    {
+      "from": "julius\\final\\REPORT.html",
+      "link": "directed-frontier-memory-NESW.jsonl"
+    },
+    {
+      "from": "julius\\final\\REPORT.html",
+      "link": "directed-frontier-memory-ESWN.jsonl"
+    },
+    {
+      "from": "julius\\final\\REPORT.html",
+      "link": "directed-frontier-memory-SWNE.jsonl"
+    },
+    {
+      "from": "julius\\final\\REPORT.html",
+      "link": "directed-frontier-memory-WNES.jsonl"
+    },
+    {
+      "from": "julius\\final\\REPORT.html",
+      "link": "directed-frontier-memory-NEWS.jsonl"
+    },
+    {
+      "from": "julius\\final\\REPORT.html",
+      "link": "directed-frontier-memory-NSEW.jsonl"
+    },
+    {
+      "from": "julius\\final\\REPORT.html",
+      "link": "directed-frontier-memory-NSWE.jsonl"
+    },
+    {
+      "from": "julius\\final\\REPORT.html",
+      "link": "directed-frontier-memory-NWES.jsonl"
+    },
+    {
+      "from": "julius\\final\\REPORT.html",
+      "link": "directed-frontier-memory-NWSE.jsonl"
+    },
+    {
+      "from": "julius\\final\\REPORT.html",
+      "link": "directed-frontier-memory-ENSW.jsonl"
+    },
+    {
+      "from": "julius\\final\\REPORT.html",
+      "link": "directed-frontier-memory-ENWS.jsonl"
+    },
+    {
+      "from": "julius\\final\\REPORT.html",
+      "link": "directed-frontier-memory-ESNW.jsonl"
+    },
+    {
+      "from": "julius\\final\\REPORT.html",
+      "link": "directed-frontier-memory-EWNS.jsonl"
+    },
+    {
+      "from": "julius\\final\\REPORT.html",
+      "link": "directed-frontier-memory-EWSN.jsonl"
+    },
+    {
+      "from": "julius\\final\\REPORT.html",
+      "link": "directed-frontier-memory-SNEW.jsonl"
+    },
+    {
+      "from": "julius\\final\\REPORT.html",
+      "link": "directed-frontier-memory-SNWE.jsonl"
+    },
+    {
+      "from": "julius\\final\\REPORT.html",
+      "link": "directed-frontier-memory-SENW.jsonl"
+    },
+    {
+      "from": "julius\\final\\REPORT.html",
+      "link": "directed-frontier-memory-SEWN.jsonl"
+    },
+    {
+      "from": "julius\\final\\REPORT.html",
+      "link": "directed-frontier-memory-SWEN.jsonl"
+    },
+    {
+      "from": "julius\\final\\REPORT.html",
+      "link": "directed-frontier-memory-WNSE.jsonl"
+    },
+    {
+      "from": "julius\\final\\REPORT.html",
+      "link": "directed-frontier-memory-WENS.jsonl"
+    },
+    {
+      "from": "julius\\final\\REPORT.html",
+      "link": "directed-frontier-memory-WESN.jsonl"
+    },
+    {
+      "from": "julius\\final\\REPORT.html",
+      "link": "directed-frontier-memory-WSNE.jsonl"
+    },
+    {
+      "from": "julius\\final\\REPORT.html",
+      "link": "directed-frontier-memory-WSEN.jsonl"
+    },
+    {
+      "from": "julius\\final\\REPORT.html",
+      "link": "report.json"
+    },
+    {
+      "from": "julius\\final\\REPORT.html",
+      "link": "input-layout.js"
+    },
+    {
+      "from": "model-360.html",
+      "link": "Quy-Mu-REV-P.zip"
+    },
+    {
+      "from": "model-360.html",
+      "link": "blueprint/index.html"
+    },
+    {
+      "from": "model-360.html",
+      "link": "julius/final/REPORT.html"
+    },
+    {
+      "from": "model-360.html",
+      "link": "HUONG-DAN.html"
+    }
+  ]
+}

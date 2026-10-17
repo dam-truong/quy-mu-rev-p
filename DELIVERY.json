@@ -1,0 +1,30 @@
+{
+  "revision": "P",
+  "basedOn": "O",
+  "status": "PASS_SIMULATION_GATE",
+  "published": false,
+  "thresholdSeconds": 600,
+  "minimumSeconds": 616.458333333329,
+  "maximumSeconds": 729.5138888888799,
+  "shortfallSeconds": 0,
+  "permutations": 24,
+  "oneWayDoors": 22,
+  "rotatingWalls": 4,
+  "emergencyPanels": 1,
+  "sourceSHA256": "4bfa818db193497c01c28394ab6103fea1207aca01d534ef65c586cb47f82a6b",
+  "hashes": {
+    "src/layout.js": "4bfa818db193497c01c28394ab6103fea1207aca01d534ef65c586cb47f82a6b",
+    "model-360.html": "bd4a113adfffaf24a31c9fe9f7c8131fc8f71c32b2603ad3ce406cad10410a15",
+    "julius/final/REPORT.html": "03fb7c9e5c98c3415a3b53698eeea5cecf4fee986cd65e80e33da97666587af3",
+    "julius/final/report.json": "8e87424d9a545b3aabcee1294ab321e464e0665f396019c4cf94ad5870202ebe",
+    "julius/final/independent-review.json": "e24f35820b31a1ff756660ed6a8fbc440aacb9959384cd67ef77f6fa597a220a",
+    "constraint-validation.json": "b016b9c668267cf7040981c078ded250389f058fe13f093869c58e50330d7297",
+    "render-validation.json": "c277d62dc84b061aa5e0fc26925cc19cf98e69104e7c808aac4914c9f10594a5",
+    "emergency-plan.json": "2c719f4cc5cfb23d57e317a79bc54c22526b33d7e0f25fcb044f57d966007508",
+    "iterations/search-report.json": "d605f3acb39ef2f48f2a97e1237a90ac5254fd04526cc607a3577a88d50aba97",
+    "Quy-Mu-REV-P-S0.glb": "1721134be1ee3d3ade77057433a9e3a806acd12992e19ce97ec15308d1fa840f",
+    "Quy-Mu-REV-P-S1.glb": "7a135c7ef07ca698aabbc8f16a37686e3e2817be43247f8eb7c2fae54a18c5da",
+    "Quy-Mu-REV-P-S2.glb": "db589436a150364c756f2a8b55b9a8c01efd5dad3deaeacbead87ead3293f1ee",
+    "Quy-Mu-REV-P-S3.glb": "2af8396797e8c897976886ab5f45950aac371e40dc66c822e0360b43853507a4"
+  }
+}

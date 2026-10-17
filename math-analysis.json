@@ -1,0 +1,123 @@
+{
+  "method": "Numerical solution of absorbing Markov equations, not Monte Carlo.",
+  "policy": "Uniform random choice among currently legal outgoing corridor edges at each step; no memory, no clues.",
+  "equation": "h(target)=0; h(v)=1 + sum(h(w)/outdegree(v)) over legal outgoing neighbors.",
+  "stages": [
+    {
+      "phase": 0,
+      "target": "11,0",
+      "transientStates": 79,
+      "expectedSteps": 2491278.999879671,
+      "expectedMeters": 2283672.416556365,
+      "expectedSecondsAt1_2": 1903060.3471303042,
+      "maxLinearResidual": 6.984919309616089e-9
+    },
+    {
+      "phase": 1,
+      "target": "11,8",
+      "transientStates": 83,
+      "expectedSteps": 433497.9999968534,
+      "expectedMeters": 397373.16666378226,
+      "expectedSecondsAt1_2": 331144.3055531519,
+      "maxLinearResidual": 3.4924596548080444e-10
+    },
+    {
+      "phase": 2,
+      "target": "1,2",
+      "transientStates": 84,
+      "expectedSteps": 438.0101522842621,
+      "expectedMeters": 401.50930626057357,
+      "expectedSecondsAt1_2": 334.591088550478,
+      "maxLinearResidual": 1.7053025658242404e-13
+    },
+    {
+      "phase": 3,
+      "target": "11,0",
+      "transientStates": 84,
+      "expectedSteps": 864098.9999846127,
+      "expectedMeters": 792090.7499858949,
+      "expectedSecondsAt1_2": 660075.6249882458,
+      "maxLinearResidual": 2.3865140974521637e-9
+    }
+  ],
+  "totalExpectedSecondsAt1_2": 2894614.8687602524,
+  "longestReturnDetours": [
+    {
+      "phase": 1,
+      "from": "8,4",
+      "to": "7,4",
+      "returnSteps": 35
+    },
+    {
+      "phase": 1,
+      "from": "8,5",
+      "to": "8,4",
+      "returnSteps": 35
+    },
+    {
+      "phase": 1,
+      "from": "9,6",
+      "to": "9,5",
+      "returnSteps": 35
+    },
+    {
+      "phase": 1,
+      "from": "9,7",
+      "to": "9,6",
+      "returnSteps": 35
+    },
+    {
+      "phase": 1,
+      "from": "6,7",
+      "to": "6,8",
+      "returnSteps": 35
+    },
+    {
+      "phase": 0,
+      "from": "8,4",
+      "to": "7,4",
+      "returnSteps": 33
+    },
+    {
+      "phase": 0,
+      "from": "8,5",
+      "to": "8,4",
+      "returnSteps": 33
+    },
+    {
+      "phase": 0,
+      "from": "6,7",
+      "to": "6,8",
+      "returnSteps": 33
+    },
+    {
+      "phase": 0,
+      "from": "7,7",
+      "to": "7,6",
+      "returnSteps": 31
+    },
+    {
+      "phase": 0,
+      "from": "6,7",
+      "to": "7,7",
+      "returnSteps": 31
+    },
+    {
+      "phase": 1,
+      "from": "7,7",
+      "to": "7,6",
+      "returnSteps": 31
+    },
+    {
+      "phase": 1,
+      "from": "6,7",
+      "to": "7,7",
+      "returnSteps": 31
+    }
+  ],
+  "limitations": [
+    "Random-walk expectations are not human completion times and are not the configured acceptance gate.",
+    "Gate is minimum completion time over 24 memory-based Julius direction orders.",
+    "Numerical floating-point linear solve, not symbolic exact arithmetic."
+  ]
+}

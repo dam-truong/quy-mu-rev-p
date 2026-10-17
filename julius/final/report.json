@@ -1,0 +1,1772 @@
+{
+  "status": "PASS_SIMULATION_GATE",
+  "thresholdSeconds": 600,
+  "speedMetersPerSecond": 1.2,
+  "addedDelaysSeconds": 0,
+  "permutations": 24,
+  "minimumSeconds": 616.458333333329,
+  "maximumSeconds": 729.5138888888799,
+  "legacy4MinimumSeconds": 639.3749999999948,
+  "extraPermutationsImproveFastestBySeconds": 22.91666666666572,
+  "fastestStrategy": "directed-frontier-memory-NSEW",
+  "allRunsComplete": true,
+  "geometry": {
+    "grid": {
+      "cols": 12,
+      "rows": 12
+    },
+    "cellMeters": 0.9166666666666666,
+    "corridorNodes": 85,
+    "oneWayDoors": 22,
+    "rotatingWalls": 4
+  },
+  "allCorridorCellsReachableInAtLeastOnePhase": true,
+  "phaseChecks": [
+    {
+      "phase": 0,
+      "target": "giam",
+      "reachableNodes": 80,
+      "totalNodes": 85,
+      "allReachableReturnToGate": true,
+      "futureRoomsReachable": []
+    },
+    {
+      "phase": 1,
+      "target": "canh",
+      "reachableNodes": 84,
+      "totalNodes": 85,
+      "allReachableReturnToGate": true,
+      "futureRoomsReachable": []
+    },
+    {
+      "phase": 2,
+      "target": "te",
+      "reachableNodes": 85,
+      "totalNodes": 85,
+      "allReachableReturnToGate": true,
+      "futureRoomsReachable": []
+    },
+    {
+      "phase": 3,
+      "target": "exit",
+      "reachableNodes": 85,
+      "totalNodes": 85,
+      "allReachableReturnToGate": true,
+      "futureRoomsReachable": []
+    }
+  ],
+  "transitionEndpointChecks": [
+    {
+      "fromPhase": 0,
+      "toPhase": 1,
+      "oldReachableNodes": 80,
+      "oldReachableNodesWithoutReturnAfterChange": []
+    },
+    {
+      "fromPhase": 1,
+      "toPhase": 2,
+      "oldReachableNodes": 84,
+      "oldReachableNodesWithoutReturnAfterChange": []
+    },
+    {
+      "fromPhase": 2,
+      "toPhase": 3,
+      "oldReachableNodes": 85,
+      "oldReachableNodesWithoutReturnAfterChange": []
+    }
+  ],
+  "conservativeSweepChecks": [
+    {
+      "fromPhase": 0,
+      "toPhase": 1,
+      "assumption": "All old and new closed edges block simultaneously; no emergency release assumed.",
+      "oldReachableNodesWithoutReturnDuringSweep": [
+        "6,8",
+        "7,8",
+        "8,8",
+        "8,7",
+        "9,8",
+        "10,8"
+      ]
+    },
+    {
+      "fromPhase": 1,
+      "toPhase": 2,
+      "assumption": "All old and new closed edges block simultaneously; no emergency release assumed.",
+      "oldReachableNodesWithoutReturnDuringSweep": [
+        "3,7",
+        "2,5",
+        "2,4",
+        "3,5",
+        "2,3",
+        "1,4",
+        "3,4",
+        "4,5",
+        "3,3",
+        "1,3",
+        "4,4",
+        "5,5",
+        "4,3",
+        "6,5",
+        "5,6",
+        "5,3",
+        "6,6",
+        "7,5",
+        "6,8",
+        "7,7",
+        "5,4",
+        "7,6",
+        "7,4",
+        "7,8",
+        "6,4",
+        "8,8",
+        "6,3",
+        "8,7",
+        "9,8",
+        "7,3",
+        "9,7",
+        "10,8",
+        "7,2",
+        "9,6",
+        "11,8",
+        "9,5",
+        "10,6",
+        "11,7",
+        "9,4",
+        "8,5",
+        "10,5",
+        "10,7",
+        "10,4",
+        "8,4",
+        "8,6",
+        "11,5",
+        "10,3",
+        "11,4",
+        "11,6",
+        "9,3",
+        "11,3",
+        "9,2",
+        "11,2",
+        "8,2",
+        "11,1",
+        "10,2",
+        "8,3",
+        "11,0"
+      ]
+    },
+    {
+      "fromPhase": 2,
+      "toPhase": 3,
+      "assumption": "All old and new closed edges block simultaneously; no emergency release assumed.",
+      "oldReachableNodesWithoutReturnDuringSweep": []
+    }
+  ],
+  "omniscient": {
+    "totalMeters": 105.41666666666666,
+    "stages": [
+      {
+        "phase": 0,
+        "target": "giam",
+        "steps": 23,
+        "meters": 21.083333333333332,
+        "route": [
+          "4,8",
+          "3,8",
+          "2,8",
+          "2,7",
+          "2,6",
+          "3,6",
+          "4,6",
+          "4,7",
+          "5,7",
+          "6,7",
+          "6,8",
+          "7,8",
+          "8,8",
+          "8,7",
+          "8,6",
+          "8,5",
+          "9,5",
+          "10,5",
+          "11,5",
+          "11,4",
+          "11,3",
+          "11,2",
+          "11,1",
+          "11,0"
+        ]
+      },
+      {
+        "phase": 1,
+        "target": "canh",
+        "steps": 42,
+        "meters": 38.5,
+        "route": [
+          "11,0",
+          "11,1",
+          "11,2",
+          "11,3",
+          "11,4",
+          "11,5",
+          "10,5",
+          "9,5",
+          "8,5",
+          "8,4",
+          "7,4",
+          "6,4",
+          "5,4",
+          "5,3",
+          "4,3",
+          "3,3",
+          "2,3",
+          "2,4",
+          "1,4",
+          "1,3",
+          "0,3",
+          "0,4",
+          "0,5",
+          "1,5",
+          "1,6",
+          "0,6",
+          "0,7",
+          "0,8",
+          "1,8",
+          "2,8",
+          "2,7",
+          "2,6",
+          "3,6",
+          "4,6",
+          "4,7",
+          "5,7",
+          "6,7",
+          "6,8",
+          "7,8",
+          "8,8",
+          "9,8",
+          "10,8",
+          "11,8"
+        ]
+      },
+      {
+        "phase": 2,
+        "target": "te",
+        "steps": 20,
+        "meters": 18.333333333333332,
+        "route": [
+          "11,8",
+          "10,8",
+          "9,8",
+          "8,8",
+          "8,7",
+          "9,7",
+          "9,6",
+          "9,5",
+          "8,5",
+          "8,4",
+          "7,4",
+          "6,4",
+          "5,4",
+          "5,3",
+          "4,3",
+          "3,3",
+          "2,3",
+          "2,4",
+          "1,4",
+          "1,3",
+          "1,2"
+        ]
+      },
+      {
+        "phase": 3,
+        "target": "exit",
+        "steps": 30,
+        "meters": 27.5,
+        "route": [
+          "1,2",
+          "1,3",
+          "1,4",
+          "1,5",
+          "1,6",
+          "0,6",
+          "0,7",
+          "0,8",
+          "1,8",
+          "2,8",
+          "2,7",
+          "2,6",
+          "3,6",
+          "4,6",
+          "4,7",
+          "5,7",
+          "6,7",
+          "6,8",
+          "7,8",
+          "8,8",
+          "8,7",
+          "9,7",
+          "9,6",
+          "9,5",
+          "10,5",
+          "11,5",
+          "11,4",
+          "11,3",
+          "11,2",
+          "11,1",
+          "11,0"
+        ]
+      }
+    ]
+  },
+  "runs": [
+    {
+      "strategy": "directed-frontier-memory-NESW",
+      "meters": 767.2499999999936,
+      "steps": 837,
+      "seconds": 639.3749999999948,
+      "minutes": 10.656249999999913,
+      "sensitivitySeconds": {
+        "1.0m/s": 767.2499999999936,
+        "1.2m/s": 639.3749999999948,
+        "1.4m/s": 548.0357142857098
+      },
+      "revisitedSteps": 753,
+      "visitedNodes": 85,
+      "stages": [
+        {
+          "phase": 0,
+          "target": "giam",
+          "meters": 241.08333333333243,
+          "steps": 263,
+          "newVisitedNodes": 76,
+          "newJunctions": 16,
+          "secondsAt1_2": 200.90277777777703,
+          "knownNodesAtFinish": 78,
+          "visitedNodesAtFinish": 76
+        },
+        {
+          "phase": 1,
+          "target": "canh",
+          "meters": 256.6666666666715,
+          "steps": 280,
+          "newVisitedNodes": 7,
+          "newJunctions": 0,
+          "secondsAt1_2": 213.88888888889295,
+          "knownNodesAtFinish": 84,
+          "visitedNodesAtFinish": 83
+        },
+        {
+          "phase": 2,
+          "target": "te",
+          "meters": 64.16666666666487,
+          "steps": 70,
+          "newVisitedNodes": 2,
+          "newJunctions": 0,
+          "secondsAt1_2": 53.47222222222072,
+          "knownNodesAtFinish": 85,
+          "visitedNodesAtFinish": 85
+        },
+        {
+          "phase": 3,
+          "target": "exit",
+          "meters": 205.33333333332484,
+          "steps": 224,
+          "newVisitedNodes": 0,
+          "newJunctions": 0,
+          "secondsAt1_2": 171.11111111110404,
+          "knownNodesAtFinish": 85,
+          "visitedNodesAtFinish": 85
+        }
+      ]
+    },
+    {
+      "strategy": "directed-frontier-memory-ESWN",
+      "meters": 869.916666666656,
+      "steps": 949,
+      "seconds": 724.9305555555468,
+      "minutes": 12.08217592592578,
+      "sensitivitySeconds": {
+        "1.0m/s": 869.916666666656,
+        "1.2m/s": 724.9305555555468,
+        "1.4m/s": 621.3690476190401
+      },
+      "revisitedSteps": 865,
+      "visitedNodes": 85,
+      "stages": [
+        {
+          "phase": 0,
+          "target": "giam",
+          "meters": 299.74999999999983,
+          "steps": 327,
+          "newVisitedNodes": 80,
+          "newJunctions": 16,
+          "secondsAt1_2": 249.79166666666654,
+          "knownNodesAtFinish": 80,
+          "visitedNodesAtFinish": 80
+        },
+        {
+          "phase": 1,
+          "target": "canh",
+          "meters": 254.83333333333593,
+          "steps": 278,
+          "newVisitedNodes": 1,
+          "newJunctions": 0,
+          "secondsAt1_2": 212.36111111111327,
+          "knownNodesAtFinish": 82,
+          "visitedNodesAtFinish": 81
+        },
+        {
+          "phase": 2,
+          "target": "te",
+          "meters": 84.33333333332985,
+          "steps": 92,
+          "newVisitedNodes": 4,
+          "newJunctions": 0,
+          "secondsAt1_2": 70.27777777777487,
+          "knownNodesAtFinish": 85,
+          "visitedNodesAtFinish": 85
+        },
+        {
+          "phase": 3,
+          "target": "exit",
+          "meters": 230.99999999999045,
+          "steps": 252,
+          "newVisitedNodes": 0,
+          "newJunctions": 0,
+          "secondsAt1_2": 192.49999999999204,
+          "knownNodesAtFinish": 85,
+          "visitedNodesAtFinish": 85
+        }
+      ]
+    },
+    {
+      "strategy": "directed-frontier-memory-SWNE",
+      "meters": 871.7499999999893,
+      "steps": 951,
+      "seconds": 726.4583333333245,
+      "minutes": 12.107638888888742,
+      "sensitivitySeconds": {
+        "1.0m/s": 871.7499999999893,
+        "1.2m/s": 726.4583333333245,
+        "1.4m/s": 622.6785714285638
+      },
+      "revisitedSteps": 867,
+      "visitedNodes": 85,
+      "stages": [
+        {
+          "phase": 0,
+          "target": "giam",
+          "meters": 272.24999999999926,
+          "steps": 297,
+          "newVisitedNodes": 80,
+          "newJunctions": 16,
+          "secondsAt1_2": 226.8749999999994,
+          "knownNodesAtFinish": 80,
+          "visitedNodesAtFinish": 80
+        },
+        {
+          "phase": 1,
+          "target": "canh",
+          "meters": 284.16666666666976,
+          "steps": 310,
+          "newVisitedNodes": 3,
+          "newJunctions": 0,
+          "secondsAt1_2": 236.80555555555813,
+          "knownNodesAtFinish": 84,
+          "visitedNodesAtFinish": 83
+        },
+        {
+          "phase": 2,
+          "target": "te",
+          "meters": 60.4999999999975,
+          "steps": 66,
+          "newVisitedNodes": 2,
+          "newJunctions": 0,
+          "secondsAt1_2": 50.41666666666458,
+          "knownNodesAtFinish": 85,
+          "visitedNodesAtFinish": 85
+        },
+        {
+          "phase": 3,
+          "target": "exit",
+          "meters": 254.8333333333228,
+          "steps": 278,
+          "newVisitedNodes": 0,
+          "newJunctions": 0,
+          "secondsAt1_2": 212.36111111110233,
+          "knownNodesAtFinish": 85,
+          "visitedNodesAtFinish": 85
+        }
+      ]
+    },
+    {
+      "strategy": "directed-frontier-memory-WNES",
+      "meters": 818.5833333333248,
+      "steps": 893,
+      "seconds": 682.1527777777708,
+      "minutes": 11.369212962962846,
+      "sensitivitySeconds": {
+        "1.0m/s": 818.5833333333248,
+        "1.2m/s": 682.1527777777708,
+        "1.4m/s": 584.7023809523749
+      },
+      "revisitedSteps": 809,
+      "visitedNodes": 85,
+      "stages": [
+        {
+          "phase": 0,
+          "target": "giam",
+          "meters": 266.74999999999915,
+          "steps": 291,
+          "newVisitedNodes": 77,
+          "newJunctions": 16,
+          "secondsAt1_2": 222.29166666666598,
+          "knownNodesAtFinish": 78,
+          "visitedNodesAtFinish": 77
+        },
+        {
+          "phase": 1,
+          "target": "canh",
+          "meters": 280.5000000000036,
+          "steps": 306,
+          "newVisitedNodes": 6,
+          "newJunctions": 0,
+          "secondsAt1_2": 233.75000000000298,
+          "knownNodesAtFinish": 84,
+          "visitedNodesAtFinish": 83
+        },
+        {
+          "phase": 2,
+          "target": "te",
+          "meters": 23.833333333332348,
+          "steps": 26,
+          "newVisitedNodes": 2,
+          "newJunctions": 0,
+          "secondsAt1_2": 19.86111111111029,
+          "knownNodesAtFinish": 85,
+          "visitedNodesAtFinish": 85
+        },
+        {
+          "phase": 3,
+          "target": "exit",
+          "meters": 247.49999999998977,
+          "steps": 270,
+          "newVisitedNodes": 0,
+          "newJunctions": 0,
+          "secondsAt1_2": 206.24999999999147,
+          "knownNodesAtFinish": 85,
+          "visitedNodesAtFinish": 85
+        }
+      ]
+    },
+    {
+      "strategy": "directed-frontier-memory-NEWS",
+      "meters": 770.9166666666601,
+      "steps": 841,
+      "seconds": 642.4305555555502,
+      "minutes": 10.707175925925837,
+      "sensitivitySeconds": {
+        "1.0m/s": 770.9166666666601,
+        "1.2m/s": 642.4305555555502,
+        "1.4m/s": 550.6547619047573
+      },
+      "revisitedSteps": 757,
+      "visitedNodes": 85,
+      "stages": [
+        {
+          "phase": 0,
+          "target": "giam",
+          "meters": 241.08333333333243,
+          "steps": 263,
+          "newVisitedNodes": 76,
+          "newJunctions": 16,
+          "secondsAt1_2": 200.90277777777703,
+          "knownNodesAtFinish": 78,
+          "visitedNodesAtFinish": 76
+        },
+        {
+          "phase": 1,
+          "target": "canh",
+          "meters": 269.5000000000051,
+          "steps": 294,
+          "newVisitedNodes": 7,
+          "newJunctions": 0,
+          "secondsAt1_2": 224.5833333333376,
+          "knownNodesAtFinish": 84,
+          "visitedNodesAtFinish": 83
+        },
+        {
+          "phase": 2,
+          "target": "te",
+          "meters": 54.99999999999778,
+          "steps": 60,
+          "newVisitedNodes": 2,
+          "newJunctions": 0,
+          "secondsAt1_2": 45.83333333333149,
+          "knownNodesAtFinish": 85,
+          "visitedNodesAtFinish": 85
+        },
+        {
+          "phase": 3,
+          "target": "exit",
+          "meters": 205.33333333332484,
+          "steps": 224,
+          "newVisitedNodes": 0,
+          "newJunctions": 0,
+          "secondsAt1_2": 171.11111111110404,
+          "knownNodesAtFinish": 85,
+          "visitedNodesAtFinish": 85
+        }
+      ]
+    },
+    {
+      "strategy": "directed-frontier-memory-NSEW",
+      "meters": 739.7499999999948,
+      "steps": 807,
+      "seconds": 616.458333333329,
+      "minutes": 10.274305555555484,
+      "sensitivitySeconds": {
+        "1.0m/s": 739.7499999999948,
+        "1.2m/s": 616.458333333329,
+        "1.4m/s": 528.3928571428535
+      },
+      "revisitedSteps": 723,
+      "visitedNodes": 85,
+      "stages": [
+        {
+          "phase": 0,
+          "target": "giam",
+          "meters": 241.08333333333243,
+          "steps": 263,
+          "newVisitedNodes": 76,
+          "newJunctions": 16,
+          "secondsAt1_2": 200.90277777777703,
+          "knownNodesAtFinish": 78,
+          "visitedNodesAtFinish": 76
+        },
+        {
+          "phase": 1,
+          "target": "canh",
+          "meters": 256.6666666666715,
+          "steps": 280,
+          "newVisitedNodes": 7,
+          "newJunctions": 0,
+          "secondsAt1_2": 213.88888888889295,
+          "knownNodesAtFinish": 84,
+          "visitedNodesAtFinish": 83
+        },
+        {
+          "phase": 2,
+          "target": "te",
+          "meters": 64.16666666666487,
+          "steps": 70,
+          "newVisitedNodes": 2,
+          "newJunctions": 0,
+          "secondsAt1_2": 53.47222222222072,
+          "knownNodesAtFinish": 85,
+          "visitedNodesAtFinish": 85
+        },
+        {
+          "phase": 3,
+          "target": "exit",
+          "meters": 177.83333333332598,
+          "steps": 194,
+          "newVisitedNodes": 0,
+          "newJunctions": 0,
+          "secondsAt1_2": 148.19444444443832,
+          "knownNodesAtFinish": 85,
+          "visitedNodesAtFinish": 85
+        }
+      ]
+    },
+    {
+      "strategy": "directed-frontier-memory-NSWE",
+      "meters": 789.2499999999927,
+      "steps": 861,
+      "seconds": 657.7083333333273,
+      "minutes": 10.961805555555456,
+      "sensitivitySeconds": {
+        "1.0m/s": 789.2499999999927,
+        "1.2m/s": 657.7083333333273,
+        "1.4m/s": 563.7499999999949
+      },
+      "revisitedSteps": 777,
+      "visitedNodes": 85,
+      "stages": [
+        {
+          "phase": 0,
+          "target": "giam",
+          "meters": 241.08333333333243,
+          "steps": 263,
+          "newVisitedNodes": 76,
+          "newJunctions": 16,
+          "secondsAt1_2": 200.90277777777703,
+          "knownNodesAtFinish": 78,
+          "visitedNodesAtFinish": 76
+        },
+        {
+          "phase": 1,
+          "target": "canh",
+          "meters": 256.6666666666715,
+          "steps": 280,
+          "newVisitedNodes": 7,
+          "newJunctions": 0,
+          "secondsAt1_2": 213.88888888889295,
+          "knownNodesAtFinish": 84,
+          "visitedNodesAtFinish": 83
+        },
+        {
+          "phase": 2,
+          "target": "te",
+          "meters": 47.66666666666555,
+          "steps": 52,
+          "newVisitedNodes": 2,
+          "newJunctions": 0,
+          "secondsAt1_2": 39.72222222222129,
+          "knownNodesAtFinish": 85,
+          "visitedNodesAtFinish": 85
+        },
+        {
+          "phase": 3,
+          "target": "exit",
+          "meters": 243.83333333332325,
+          "steps": 266,
+          "newVisitedNodes": 0,
+          "newJunctions": 0,
+          "secondsAt1_2": 203.19444444443604,
+          "knownNodesAtFinish": 85,
+          "visitedNodesAtFinish": 85
+        }
+      ]
+    },
+    {
+      "strategy": "directed-frontier-memory-NWES",
+      "meters": 794.7499999999925,
+      "steps": 867,
+      "seconds": 662.2916666666605,
+      "minutes": 11.038194444444342,
+      "sensitivitySeconds": {
+        "1.0m/s": 794.7499999999925,
+        "1.2m/s": 662.2916666666605,
+        "1.4m/s": 567.6785714285661
+      },
+      "revisitedSteps": 783,
+      "visitedNodes": 85,
+      "stages": [
+        {
+          "phase": 0,
+          "target": "giam",
+          "meters": 241.08333333333243,
+          "steps": 263,
+          "newVisitedNodes": 76,
+          "newJunctions": 16,
+          "secondsAt1_2": 200.90277777777703,
+          "knownNodesAtFinish": 78,
+          "visitedNodesAtFinish": 76
+        },
+        {
+          "phase": 1,
+          "target": "canh",
+          "meters": 269.5000000000051,
+          "steps": 294,
+          "newVisitedNodes": 7,
+          "newJunctions": 0,
+          "secondsAt1_2": 224.5833333333376,
+          "knownNodesAtFinish": 84,
+          "visitedNodesAtFinish": 83
+        },
+        {
+          "phase": 2,
+          "target": "te",
+          "meters": 38.499999999998465,
+          "steps": 42,
+          "newVisitedNodes": 2,
+          "newJunctions": 0,
+          "secondsAt1_2": 32.08333333333206,
+          "knownNodesAtFinish": 85,
+          "visitedNodesAtFinish": 85
+        },
+        {
+          "phase": 3,
+          "target": "exit",
+          "meters": 245.6666666666565,
+          "steps": 268,
+          "newVisitedNodes": 0,
+          "newJunctions": 0,
+          "secondsAt1_2": 204.72222222221376,
+          "knownNodesAtFinish": 85,
+          "visitedNodesAtFinish": 85
+        }
+      ]
+    },
+    {
+      "strategy": "directed-frontier-memory-NWSE",
+      "meters": 792.9166666666592,
+      "steps": 865,
+      "seconds": 660.7638888888828,
+      "minutes": 11.01273148148138,
+      "sensitivitySeconds": {
+        "1.0m/s": 792.9166666666592,
+        "1.2m/s": 660.7638888888828,
+        "1.4m/s": 566.3690476190424
+      },
+      "revisitedSteps": 781,
+      "visitedNodes": 85,
+      "stages": [
+        {
+          "phase": 0,
+          "target": "giam",
+          "meters": 241.08333333333243,
+          "steps": 263,
+          "newVisitedNodes": 76,
+          "newJunctions": 16,
+          "secondsAt1_2": 200.90277777777703,
+          "knownNodesAtFinish": 78,
+          "visitedNodesAtFinish": 76
+        },
+        {
+          "phase": 1,
+          "target": "canh",
+          "meters": 269.5000000000051,
+          "steps": 294,
+          "newVisitedNodes": 7,
+          "newJunctions": 0,
+          "secondsAt1_2": 224.5833333333376,
+          "knownNodesAtFinish": 84,
+          "visitedNodesAtFinish": 83
+        },
+        {
+          "phase": 2,
+          "target": "te",
+          "meters": 38.499999999998465,
+          "steps": 42,
+          "newVisitedNodes": 2,
+          "newJunctions": 0,
+          "secondsAt1_2": 32.08333333333206,
+          "knownNodesAtFinish": 85,
+          "visitedNodesAtFinish": 85
+        },
+        {
+          "phase": 3,
+          "target": "exit",
+          "meters": 243.83333333332325,
+          "steps": 266,
+          "newVisitedNodes": 0,
+          "newJunctions": 0,
+          "secondsAt1_2": 203.19444444443604,
+          "knownNodesAtFinish": 85,
+          "visitedNodesAtFinish": 85
+        }
+      ]
+    },
+    {
+      "strategy": "directed-frontier-memory-ENSW",
+      "meters": 759.9166666666606,
+      "steps": 829,
+      "seconds": 633.2638888888839,
+      "minutes": 10.554398148148065,
+      "sensitivitySeconds": {
+        "1.0m/s": 759.9166666666606,
+        "1.2m/s": 633.2638888888839,
+        "1.4m/s": 542.7976190476147
+      },
+      "revisitedSteps": 745,
+      "visitedNodes": 85,
+      "stages": [
+        {
+          "phase": 0,
+          "target": "giam",
+          "meters": 222.7499999999993,
+          "steps": 243,
+          "newVisitedNodes": 68,
+          "newJunctions": 16,
+          "secondsAt1_2": 185.6249999999994,
+          "knownNodesAtFinish": 72,
+          "visitedNodesAtFinish": 68
+        },
+        {
+          "phase": 1,
+          "target": "canh",
+          "meters": 243.83333333333732,
+          "steps": 266,
+          "newVisitedNodes": 11,
+          "newJunctions": 0,
+          "secondsAt1_2": 203.19444444444778,
+          "knownNodesAtFinish": 80,
+          "visitedNodesAtFinish": 79
+        },
+        {
+          "phase": 2,
+          "target": "te",
+          "meters": 67.83333333333331,
+          "steps": 74,
+          "newVisitedNodes": 6,
+          "newJunctions": 0,
+          "secondsAt1_2": 56.527777777777764,
+          "knownNodesAtFinish": 85,
+          "visitedNodesAtFinish": 85
+        },
+        {
+          "phase": 3,
+          "target": "exit",
+          "meters": 225.49999999999068,
+          "steps": 246,
+          "newVisitedNodes": 0,
+          "newJunctions": 0,
+          "secondsAt1_2": 187.9166666666589,
+          "knownNodesAtFinish": 85,
+          "visitedNodesAtFinish": 85
+        }
+      ]
+    },
+    {
+      "strategy": "directed-frontier-memory-ENWS",
+      "meters": 748.9166666666611,
+      "steps": 817,
+      "seconds": 624.0972222222176,
+      "minutes": 10.401620370370294,
+      "sensitivitySeconds": {
+        "1.0m/s": 748.9166666666611,
+        "1.2m/s": 624.0972222222176,
+        "1.4m/s": 534.9404761904722
+      },
+      "revisitedSteps": 733,
+      "visitedNodes": 85,
+      "stages": [
+        {
+          "phase": 0,
+          "target": "giam",
+          "meters": 222.7499999999993,
+          "steps": 243,
+          "newVisitedNodes": 68,
+          "newJunctions": 16,
+          "secondsAt1_2": 185.6249999999994,
+          "knownNodesAtFinish": 72,
+          "visitedNodesAtFinish": 68
+        },
+        {
+          "phase": 1,
+          "target": "canh",
+          "meters": 242.00000000000395,
+          "steps": 264,
+          "newVisitedNodes": 11,
+          "newJunctions": 0,
+          "secondsAt1_2": 201.66666666666995,
+          "knownNodesAtFinish": 80,
+          "visitedNodesAtFinish": 79
+        },
+        {
+          "phase": 2,
+          "target": "te",
+          "meters": 58.66666666666714,
+          "steps": 64,
+          "newVisitedNodes": 6,
+          "newJunctions": 0,
+          "secondsAt1_2": 48.888888888889284,
+          "knownNodesAtFinish": 85,
+          "visitedNodesAtFinish": 85
+        },
+        {
+          "phase": 3,
+          "target": "exit",
+          "meters": 225.49999999999068,
+          "steps": 246,
+          "newVisitedNodes": 0,
+          "newJunctions": 0,
+          "secondsAt1_2": 187.9166666666589,
+          "knownNodesAtFinish": 85,
+          "visitedNodesAtFinish": 85
+        }
+      ]
+    },
+    {
+      "strategy": "directed-frontier-memory-ESNW",
+      "meters": 833.2499999999909,
+      "steps": 909,
+      "seconds": 694.3749999999925,
+      "minutes": 11.572916666666542,
+      "sensitivitySeconds": {
+        "1.0m/s": 833.2499999999909,
+        "1.2m/s": 694.3749999999925,
+        "1.4m/s": 595.178571428565
+      },
+      "revisitedSteps": 825,
+      "visitedNodes": 85,
+      "stages": [
+        {
+          "phase": 0,
+          "target": "giam",
+          "meters": 261.24999999999903,
+          "steps": 285,
+          "newVisitedNodes": 79,
+          "newJunctions": 16,
+          "secondsAt1_2": 217.70833333333255,
+          "knownNodesAtFinish": 80,
+          "visitedNodesAtFinish": 79
+        },
+        {
+          "phase": 1,
+          "target": "canh",
+          "meters": 245.66666666667174,
+          "steps": 268,
+          "newVisitedNodes": 2,
+          "newJunctions": 0,
+          "secondsAt1_2": 204.72222222222646,
+          "knownNodesAtFinish": 82,
+          "visitedNodesAtFinish": 81
+        },
+        {
+          "phase": 2,
+          "target": "te",
+          "meters": 98.99999999999619,
+          "steps": 108,
+          "newVisitedNodes": 4,
+          "newJunctions": 0,
+          "secondsAt1_2": 82.49999999999683,
+          "knownNodesAtFinish": 85,
+          "visitedNodesAtFinish": 85
+        },
+        {
+          "phase": 3,
+          "target": "exit",
+          "meters": 227.33333333332394,
+          "steps": 248,
+          "newVisitedNodes": 0,
+          "newJunctions": 0,
+          "secondsAt1_2": 189.4444444444366,
+          "knownNodesAtFinish": 85,
+          "visitedNodesAtFinish": 85
+        }
+      ]
+    },
+    {
+      "strategy": "directed-frontier-memory-EWNS",
+      "meters": 759.9166666666606,
+      "steps": 829,
+      "seconds": 633.2638888888839,
+      "minutes": 10.554398148148065,
+      "sensitivitySeconds": {
+        "1.0m/s": 759.9166666666606,
+        "1.2m/s": 633.2638888888839,
+        "1.4m/s": 542.7976190476147
+      },
+      "revisitedSteps": 745,
+      "visitedNodes": 85,
+      "stages": [
+        {
+          "phase": 0,
+          "target": "giam",
+          "meters": 248.4166666666657,
+          "steps": 271,
+          "newVisitedNodes": 69,
+          "newJunctions": 16,
+          "secondsAt1_2": 207.0138888888881,
+          "knownNodesAtFinish": 72,
+          "visitedNodesAtFinish": 69
+        },
+        {
+          "phase": 1,
+          "target": "canh",
+          "meters": 240.16666666667138,
+          "steps": 262,
+          "newVisitedNodes": 10,
+          "newJunctions": 0,
+          "secondsAt1_2": 200.1388888888928,
+          "knownNodesAtFinish": 80,
+          "visitedNodesAtFinish": 79
+        },
+        {
+          "phase": 2,
+          "target": "te",
+          "meters": 43.9999999999996,
+          "steps": 48,
+          "newVisitedNodes": 6,
+          "newJunctions": 0,
+          "secondsAt1_2": 36.66666666666634,
+          "knownNodesAtFinish": 85,
+          "visitedNodesAtFinish": 85
+        },
+        {
+          "phase": 3,
+          "target": "exit",
+          "meters": 227.33333333332394,
+          "steps": 248,
+          "newVisitedNodes": 0,
+          "newJunctions": 0,
+          "secondsAt1_2": 189.4444444444366,
+          "knownNodesAtFinish": 85,
+          "visitedNodesAtFinish": 85
+        }
+      ]
+    },
+    {
+      "strategy": "directed-frontier-memory-EWSN",
+      "meters": 860.7499999999898,
+      "steps": 939,
+      "seconds": 717.2916666666582,
+      "minutes": 11.95486111111097,
+      "sensitivitySeconds": {
+        "1.0m/s": 860.7499999999898,
+        "1.2m/s": 717.2916666666582,
+        "1.4m/s": 614.8214285714213
+      },
+      "revisitedSteps": 855,
+      "visitedNodes": 85,
+      "stages": [
+        {
+          "phase": 0,
+          "target": "giam",
+          "meters": 299.74999999999983,
+          "steps": 327,
+          "newVisitedNodes": 80,
+          "newJunctions": 16,
+          "secondsAt1_2": 249.79166666666654,
+          "knownNodesAtFinish": 80,
+          "visitedNodesAtFinish": 80
+        },
+        {
+          "phase": 1,
+          "target": "canh",
+          "meters": 256.6666666666692,
+          "steps": 280,
+          "newVisitedNodes": 1,
+          "newJunctions": 0,
+          "secondsAt1_2": 213.888888888891,
+          "knownNodesAtFinish": 82,
+          "visitedNodesAtFinish": 81
+        },
+        {
+          "phase": 2,
+          "target": "te",
+          "meters": 75.16666666666356,
+          "steps": 82,
+          "newVisitedNodes": 4,
+          "newJunctions": 0,
+          "secondsAt1_2": 62.6388888888863,
+          "knownNodesAtFinish": 85,
+          "visitedNodesAtFinish": 85
+        },
+        {
+          "phase": 3,
+          "target": "exit",
+          "meters": 229.1666666666572,
+          "steps": 250,
+          "newVisitedNodes": 0,
+          "newJunctions": 0,
+          "secondsAt1_2": 190.97222222221433,
+          "knownNodesAtFinish": 85,
+          "visitedNodesAtFinish": 85
+        }
+      ]
+    },
+    {
+      "strategy": "directed-frontier-memory-SNEW",
+      "meters": 767.2499999999936,
+      "steps": 837,
+      "seconds": 639.3749999999948,
+      "minutes": 10.656249999999913,
+      "sensitivitySeconds": {
+        "1.0m/s": 767.2499999999936,
+        "1.2m/s": 639.3749999999948,
+        "1.4m/s": 548.0357142857098
+      },
+      "revisitedSteps": 753,
+      "visitedNodes": 85,
+      "stages": [
+        {
+          "phase": 0,
+          "target": "giam",
+          "meters": 253.91666666666563,
+          "steps": 277,
+          "newVisitedNodes": 79,
+          "newJunctions": 16,
+          "secondsAt1_2": 211.59722222222138,
+          "knownNodesAtFinish": 80,
+          "visitedNodesAtFinish": 79
+        },
+        {
+          "phase": 1,
+          "target": "canh",
+          "meters": 256.66666666667186,
+          "steps": 280,
+          "newVisitedNodes": 4,
+          "newJunctions": 0,
+          "secondsAt1_2": 213.88888888889323,
+          "knownNodesAtFinish": 84,
+          "visitedNodesAtFinish": 83
+        },
+        {
+          "phase": 2,
+          "target": "te",
+          "meters": 76.99999999999687,
+          "steps": 84,
+          "newVisitedNodes": 2,
+          "newJunctions": 0,
+          "secondsAt1_2": 64.16666666666407,
+          "knownNodesAtFinish": 85,
+          "visitedNodesAtFinish": 85
+        },
+        {
+          "phase": 3,
+          "target": "exit",
+          "meters": 179.66666666665924,
+          "steps": 196,
+          "newVisitedNodes": 0,
+          "newJunctions": 0,
+          "secondsAt1_2": 149.72222222221603,
+          "knownNodesAtFinish": 85,
+          "visitedNodesAtFinish": 85
+        }
+      ]
+    },
+    {
+      "strategy": "directed-frontier-memory-SNWE",
+      "meters": 818.5833333333248,
+      "steps": 893,
+      "seconds": 682.1527777777708,
+      "minutes": 11.369212962962846,
+      "sensitivitySeconds": {
+        "1.0m/s": 818.5833333333248,
+        "1.2m/s": 682.1527777777708,
+        "1.4m/s": 584.7023809523749
+      },
+      "revisitedSteps": 809,
+      "visitedNodes": 85,
+      "stages": [
+        {
+          "phase": 0,
+          "target": "giam",
+          "meters": 253.91666666666563,
+          "steps": 277,
+          "newVisitedNodes": 79,
+          "newJunctions": 16,
+          "secondsAt1_2": 211.59722222222138,
+          "knownNodesAtFinish": 80,
+          "visitedNodesAtFinish": 79
+        },
+        {
+          "phase": 1,
+          "target": "canh",
+          "meters": 256.66666666667186,
+          "steps": 280,
+          "newVisitedNodes": 4,
+          "newJunctions": 0,
+          "secondsAt1_2": 213.88888888889323,
+          "knownNodesAtFinish": 84,
+          "visitedNodesAtFinish": 83
+        },
+        {
+          "phase": 2,
+          "target": "te",
+          "meters": 60.499999999997556,
+          "steps": 66,
+          "newVisitedNodes": 2,
+          "newJunctions": 0,
+          "secondsAt1_2": 50.41666666666463,
+          "knownNodesAtFinish": 85,
+          "visitedNodesAtFinish": 85
+        },
+        {
+          "phase": 3,
+          "target": "exit",
+          "meters": 247.49999999998977,
+          "steps": 270,
+          "newVisitedNodes": 0,
+          "newJunctions": 0,
+          "secondsAt1_2": 206.24999999999147,
+          "knownNodesAtFinish": 85,
+          "visitedNodesAtFinish": 85
+        }
+      ]
+    },
+    {
+      "strategy": "directed-frontier-memory-SENW",
+      "meters": 758.0833333333273,
+      "steps": 827,
+      "seconds": 631.7361111111062,
+      "minutes": 10.528935185185103,
+      "sensitivitySeconds": {
+        "1.0m/s": 758.0833333333273,
+        "1.2m/s": 631.7361111111062,
+        "1.4m/s": 541.488095238091
+      },
+      "revisitedSteps": 743,
+      "visitedNodes": 85,
+      "stages": [
+        {
+          "phase": 0,
+          "target": "giam",
+          "meters": 296.0833333333331,
+          "steps": 323,
+          "newVisitedNodes": 79,
+          "newJunctions": 16,
+          "secondsAt1_2": 246.73611111111092,
+          "knownNodesAtFinish": 80,
+          "visitedNodesAtFinish": 79
+        },
+        {
+          "phase": 1,
+          "target": "canh",
+          "meters": 196.16666666667072,
+          "steps": 214,
+          "newVisitedNodes": 2,
+          "newJunctions": 0,
+          "secondsAt1_2": 163.4722222222256,
+          "knownNodesAtFinish": 82,
+          "visitedNodesAtFinish": 81
+        },
+        {
+          "phase": 2,
+          "target": "te",
+          "meters": 108.16666666666339,
+          "steps": 118,
+          "newVisitedNodes": 4,
+          "newJunctions": 0,
+          "secondsAt1_2": 90.13888888888616,
+          "knownNodesAtFinish": 85,
+          "visitedNodesAtFinish": 85
+        },
+        {
+          "phase": 3,
+          "target": "exit",
+          "meters": 157.66666666666015,
+          "steps": 172,
+          "newVisitedNodes": 0,
+          "newJunctions": 0,
+          "secondsAt1_2": 131.38888888888346,
+          "knownNodesAtFinish": 85,
+          "visitedNodesAtFinish": 85
+        }
+      ]
+    },
+    {
+      "strategy": "directed-frontier-memory-SEWN",
+      "meters": 741.583333333328,
+      "steps": 809,
+      "seconds": 617.9861111111068,
+      "minutes": 10.299768518518446,
+      "sensitivitySeconds": {
+        "1.0m/s": 741.583333333328,
+        "1.2m/s": 617.9861111111068,
+        "1.4m/s": 529.7023809523772
+      },
+      "revisitedSteps": 725,
+      "visitedNodes": 85,
+      "stages": [
+        {
+          "phase": 0,
+          "target": "giam",
+          "meters": 299.74999999999983,
+          "steps": 327,
+          "newVisitedNodes": 80,
+          "newJunctions": 16,
+          "secondsAt1_2": 249.79166666666654,
+          "knownNodesAtFinish": 80,
+          "visitedNodesAtFinish": 80
+        },
+        {
+          "phase": 1,
+          "target": "canh",
+          "meters": 198.0000000000041,
+          "steps": 216,
+          "newVisitedNodes": 1,
+          "newJunctions": 0,
+          "secondsAt1_2": 165.0000000000034,
+          "knownNodesAtFinish": 82,
+          "visitedNodesAtFinish": 81
+        },
+        {
+          "phase": 2,
+          "target": "te",
+          "meters": 84.3333333333307,
+          "steps": 92,
+          "newVisitedNodes": 4,
+          "newJunctions": 0,
+          "secondsAt1_2": 70.27777777777558,
+          "knownNodesAtFinish": 85,
+          "visitedNodesAtFinish": 85
+        },
+        {
+          "phase": 3,
+          "target": "exit",
+          "meters": 159.4999999999934,
+          "steps": 174,
+          "newVisitedNodes": 0,
+          "newJunctions": 0,
+          "secondsAt1_2": 132.91666666666117,
+          "knownNodesAtFinish": 85,
+          "visitedNodesAtFinish": 85
+        }
+      ]
+    },
+    {
+      "strategy": "directed-frontier-memory-SWEN",
+      "meters": 829.5833333333244,
+      "steps": 905,
+      "seconds": 691.3194444444371,
+      "minutes": 11.521990740740618,
+      "sensitivitySeconds": {
+        "1.0m/s": 829.5833333333244,
+        "1.2m/s": 691.3194444444371,
+        "1.4m/s": 592.5595238095175
+      },
+      "revisitedSteps": 821,
+      "visitedNodes": 85,
+      "stages": [
+        {
+          "phase": 0,
+          "target": "giam",
+          "meters": 299.74999999999983,
+          "steps": 327,
+          "newVisitedNodes": 80,
+          "newJunctions": 16,
+          "secondsAt1_2": 249.79166666666654,
+          "knownNodesAtFinish": 80,
+          "visitedNodesAtFinish": 80
+        },
+        {
+          "phase": 1,
+          "target": "canh",
+          "meters": 198.0000000000041,
+          "steps": 216,
+          "newVisitedNodes": 1,
+          "newJunctions": 0,
+          "secondsAt1_2": 165.0000000000034,
+          "knownNodesAtFinish": 82,
+          "visitedNodesAtFinish": 81
+        },
+        {
+          "phase": 2,
+          "target": "te",
+          "meters": 67.83333333333138,
+          "steps": 74,
+          "newVisitedNodes": 4,
+          "newJunctions": 0,
+          "secondsAt1_2": 56.52777777777615,
+          "knownNodesAtFinish": 85,
+          "visitedNodesAtFinish": 85
+        },
+        {
+          "phase": 3,
+          "target": "exit",
+          "meters": 263.9999999999891,
+          "steps": 288,
+          "newVisitedNodes": 0,
+          "newJunctions": 0,
+          "secondsAt1_2": 219.9999999999909,
+          "knownNodesAtFinish": 85,
+          "visitedNodesAtFinish": 85
+        }
+      ]
+    },
+    {
+      "strategy": "directed-frontier-memory-WNSE",
+      "meters": 822.2499999999914,
+      "steps": 897,
+      "seconds": 685.2083333333262,
+      "minutes": 11.42013888888877,
+      "sensitivitySeconds": {
+        "1.0m/s": 822.2499999999914,
+        "1.2m/s": 685.2083333333262,
+        "1.4m/s": 587.3214285714224
+      },
+      "revisitedSteps": 813,
+      "visitedNodes": 85,
+      "stages": [
+        {
+          "phase": 0,
+          "target": "giam",
+          "meters": 266.74999999999915,
+          "steps": 291,
+          "newVisitedNodes": 77,
+          "newJunctions": 16,
+          "secondsAt1_2": 222.29166666666598,
+          "knownNodesAtFinish": 78,
+          "visitedNodesAtFinish": 77
+        },
+        {
+          "phase": 1,
+          "target": "canh",
+          "meters": 280.5000000000036,
+          "steps": 306,
+          "newVisitedNodes": 6,
+          "newJunctions": 0,
+          "secondsAt1_2": 233.75000000000298,
+          "knownNodesAtFinish": 84,
+          "visitedNodesAtFinish": 83
+        },
+        {
+          "phase": 2,
+          "target": "te",
+          "meters": 23.833333333332348,
+          "steps": 26,
+          "newVisitedNodes": 2,
+          "newJunctions": 0,
+          "secondsAt1_2": 19.86111111111029,
+          "knownNodesAtFinish": 85,
+          "visitedNodesAtFinish": 85
+        },
+        {
+          "phase": 3,
+          "target": "exit",
+          "meters": 251.16666666665628,
+          "steps": 274,
+          "newVisitedNodes": 0,
+          "newJunctions": 0,
+          "secondsAt1_2": 209.3055555555469,
+          "knownNodesAtFinish": 85,
+          "visitedNodesAtFinish": 85
+        }
+      ]
+    },
+    {
+      "strategy": "directed-frontier-memory-WENS",
+      "meters": 772.7499999999934,
+      "steps": 843,
+      "seconds": 643.9583333333279,
+      "minutes": 10.732638888888799,
+      "sensitivitySeconds": {
+        "1.0m/s": 772.7499999999934,
+        "1.2m/s": 643.9583333333279,
+        "1.4m/s": 551.964285714281
+      },
+      "revisitedSteps": 759,
+      "visitedNodes": 85,
+      "stages": [
+        {
+          "phase": 0,
+          "target": "giam",
+          "meters": 248.4166666666657,
+          "steps": 271,
+          "newVisitedNodes": 69,
+          "newJunctions": 16,
+          "secondsAt1_2": 207.0138888888881,
+          "knownNodesAtFinish": 72,
+          "visitedNodesAtFinish": 69
+        },
+        {
+          "phase": 1,
+          "target": "canh",
+          "meters": 240.16666666667138,
+          "steps": 262,
+          "newVisitedNodes": 10,
+          "newJunctions": 0,
+          "secondsAt1_2": 200.1388888888928,
+          "knownNodesAtFinish": 80,
+          "visitedNodesAtFinish": 79
+        },
+        {
+          "phase": 2,
+          "target": "te",
+          "meters": 27.500000000000284,
+          "steps": 30,
+          "newVisitedNodes": 6,
+          "newJunctions": 0,
+          "secondsAt1_2": 22.916666666666906,
+          "knownNodesAtFinish": 85,
+          "visitedNodesAtFinish": 85
+        },
+        {
+          "phase": 3,
+          "target": "exit",
+          "meters": 256.66666666665606,
+          "steps": 280,
+          "newVisitedNodes": 0,
+          "newJunctions": 0,
+          "secondsAt1_2": 213.88888888888005,
+          "knownNodesAtFinish": 85,
+          "visitedNodesAtFinish": 85
+        }
+      ]
+    },
+    {
+      "strategy": "directed-frontier-memory-WESN",
+      "meters": 875.4166666666558,
+      "steps": 955,
+      "seconds": 729.5138888888799,
+      "minutes": 12.158564814814666,
+      "sensitivitySeconds": {
+        "1.0m/s": 875.4166666666558,
+        "1.2m/s": 729.5138888888799,
+        "1.4m/s": 625.2976190476113
+      },
+      "revisitedSteps": 871,
+      "visitedNodes": 85,
+      "stages": [
+        {
+          "phase": 0,
+          "target": "giam",
+          "meters": 299.74999999999983,
+          "steps": 327,
+          "newVisitedNodes": 80,
+          "newJunctions": 16,
+          "secondsAt1_2": 249.79166666666654,
+          "knownNodesAtFinish": 80,
+          "visitedNodesAtFinish": 80
+        },
+        {
+          "phase": 1,
+          "target": "canh",
+          "meters": 256.6666666666692,
+          "steps": 280,
+          "newVisitedNodes": 1,
+          "newJunctions": 0,
+          "secondsAt1_2": 213.888888888891,
+          "knownNodesAtFinish": 82,
+          "visitedNodesAtFinish": 81
+        },
+        {
+          "phase": 2,
+          "target": "te",
+          "meters": 58.66666666666424,
+          "steps": 64,
+          "newVisitedNodes": 4,
+          "newJunctions": 0,
+          "secondsAt1_2": 48.88888888888687,
+          "knownNodesAtFinish": 85,
+          "visitedNodesAtFinish": 85
+        },
+        {
+          "phase": 3,
+          "target": "exit",
+          "meters": 260.33333333332257,
+          "steps": 284,
+          "newVisitedNodes": 0,
+          "newJunctions": 0,
+          "secondsAt1_2": 216.94444444443548,
+          "knownNodesAtFinish": 85,
+          "visitedNodesAtFinish": 85
+        }
+      ]
+    },
+    {
+      "strategy": "directed-frontier-memory-WSNE",
+      "meters": 864.4166666666563,
+      "steps": 943,
+      "seconds": 720.3472222222136,
+      "minutes": 12.005787037036894,
+      "sensitivitySeconds": {
+        "1.0m/s": 864.4166666666563,
+        "1.2m/s": 720.3472222222136,
+        "1.4m/s": 617.4404761904688
+      },
+      "revisitedSteps": 859,
+      "visitedNodes": 85,
+      "stages": [
+        {
+          "phase": 0,
+          "target": "giam",
+          "meters": 272.24999999999926,
+          "steps": 297,
+          "newVisitedNodes": 80,
+          "newJunctions": 16,
+          "secondsAt1_2": 226.8749999999994,
+          "knownNodesAtFinish": 80,
+          "visitedNodesAtFinish": 80
+        },
+        {
+          "phase": 1,
+          "target": "canh",
+          "meters": 286.000000000003,
+          "steps": 312,
+          "newVisitedNodes": 3,
+          "newJunctions": 0,
+          "secondsAt1_2": 238.33333333333584,
+          "knownNodesAtFinish": 84,
+          "visitedNodesAtFinish": 83
+        },
+        {
+          "phase": 2,
+          "target": "te",
+          "meters": 51.33333333333121,
+          "steps": 56,
+          "newVisitedNodes": 2,
+          "newJunctions": 0,
+          "secondsAt1_2": 42.77777777777601,
+          "knownNodesAtFinish": 85,
+          "visitedNodesAtFinish": 85
+        },
+        {
+          "phase": 3,
+          "target": "exit",
+          "meters": 254.8333333333228,
+          "steps": 278,
+          "newVisitedNodes": 0,
+          "newJunctions": 0,
+          "secondsAt1_2": 212.36111111110233,
+          "knownNodesAtFinish": 85,
+          "visitedNodesAtFinish": 85
+        }
+      ]
+    },
+    {
+      "strategy": "directed-frontier-memory-WSEN",
+      "meters": 822.2499999999914,
+      "steps": 897,
+      "seconds": 685.2083333333262,
+      "minutes": 11.42013888888877,
+      "sensitivitySeconds": {
+        "1.0m/s": 822.2499999999914,
+        "1.2m/s": 685.2083333333262,
+        "1.4m/s": 587.3214285714224
+      },
+      "revisitedSteps": 813,
+      "visitedNodes": 85,
+      "stages": [
+        {
+          "phase": 0,
+          "target": "giam",
+          "meters": 299.74999999999983,
+          "steps": 327,
+          "newVisitedNodes": 80,
+          "newJunctions": 16,
+          "secondsAt1_2": 249.79166666666654,
+          "knownNodesAtFinish": 80,
+          "visitedNodesAtFinish": 80
+        },
+        {
+          "phase": 1,
+          "target": "canh",
+          "meters": 199.83333333333746,
+          "steps": 218,
+          "newVisitedNodes": 1,
+          "newJunctions": 0,
+          "secondsAt1_2": 166.52777777778124,
+          "knownNodesAtFinish": 82,
+          "visitedNodesAtFinish": 81
+        },
+        {
+          "phase": 2,
+          "target": "te",
+          "meters": 58.66666666666498,
+          "steps": 64,
+          "newVisitedNodes": 4,
+          "newJunctions": 0,
+          "secondsAt1_2": 48.888888888887486,
+          "knownNodesAtFinish": 85,
+          "visitedNodesAtFinish": 85
+        },
+        {
+          "phase": 3,
+          "target": "exit",
+          "meters": 263.9999999999891,
+          "steps": 288,
+          "newVisitedNodes": 0,
+          "newJunctions": 0,
+          "secondsAt1_2": 219.9999999999909,
+          "knownNodesAtFinish": 85,
+          "visitedNodesAtFinish": 85
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Simulation time, not human playtest time.",
+    "Same memory/frontier algorithm across all direction permutations; not a proof about every possible strategy.",
+    "Exit label is hidden until phase 3; room targets are corridor approach cells.",
+    "Memory persists across phases; no added turn, thought, waiting or puzzle time.",
+    "Endpoint connectivity is not physical sweep safety; conservative sweep findings are reported separately."
+  ],
+  "sourceSHA256": "4bfa818db193497c01c28394ab6103fea1207aca01d534ef65c586cb47f82a6b",
+  "sourcePath": "C:\\Users\\damtr\\OneDrive\\Documents\\Escape Room\\render\\quy-mu-rev-P\\src\\layout.js",
+  "solverSHA256": "9c323b431d92aadc3c77455cab6b3f0a0c7af29df925fe1ef51f36f24d9a7227"
+}

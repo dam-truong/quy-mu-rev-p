@@ -1,0 +1,228 @@
+{
+  "status": "PASS_INDEPENDENT_REVIEW",
+  "sourceSHA256": "4bfa818db193497c01c28394ab6103fea1207aca01d534ef65c586cb47f82a6b",
+  "all24GraphAndSavedLogEquivalence": true,
+  "graphComparisons": 340,
+  "equivalence": [
+    {
+      "rank": "NESW",
+      "steps": 837,
+      "seconds": 639.3749999999948,
+      "allSavedLogEntriesMatch": true,
+      "fastStepsMatch": true
+    },
+    {
+      "rank": "ESWN",
+      "steps": 949,
+      "seconds": 724.9305555555468,
+      "allSavedLogEntriesMatch": true,
+      "fastStepsMatch": true
+    },
+    {
+      "rank": "SWNE",
+      "steps": 951,
+      "seconds": 726.4583333333245,
+      "allSavedLogEntriesMatch": true,
+      "fastStepsMatch": true
+    },
+    {
+      "rank": "WNES",
+      "steps": 893,
+      "seconds": 682.1527777777708,
+      "allSavedLogEntriesMatch": true,
+      "fastStepsMatch": true
+    },
+    {
+      "rank": "NEWS",
+      "steps": 841,
+      "seconds": 642.4305555555502,
+      "allSavedLogEntriesMatch": true,
+      "fastStepsMatch": true
+    },
+    {
+      "rank": "NSEW",
+      "steps": 807,
+      "seconds": 616.458333333329,
+      "allSavedLogEntriesMatch": true,
+      "fastStepsMatch": true
+    },
+    {
+      "rank": "NSWE",
+      "steps": 861,
+      "seconds": 657.7083333333273,
+      "allSavedLogEntriesMatch": true,
+      "fastStepsMatch": true
+    },
+    {
+      "rank": "NWES",
+      "steps": 867,
+      "seconds": 662.2916666666605,
+      "allSavedLogEntriesMatch": true,
+      "fastStepsMatch": true
+    },
+    {
+      "rank": "NWSE",
+      "steps": 865,
+      "seconds": 660.7638888888828,
+      "allSavedLogEntriesMatch": true,
+      "fastStepsMatch": true
+    },
+    {
+      "rank": "ENSW",
+      "steps": 829,
+      "seconds": 633.2638888888839,
+      "allSavedLogEntriesMatch": true,
+      "fastStepsMatch": true
+    },
+    {
+      "rank": "ENWS",
+      "steps": 817,
+      "seconds": 624.0972222222176,
+      "allSavedLogEntriesMatch": true,
+      "fastStepsMatch": true
+    },
+    {
+      "rank": "ESNW",
+      "steps": 909,
+      "seconds": 694.3749999999925,
+      "allSavedLogEntriesMatch": true,
+      "fastStepsMatch": true
+    },
+    {
+      "rank": "EWNS",
+      "steps": 829,
+      "seconds": 633.2638888888839,
+      "allSavedLogEntriesMatch": true,
+      "fastStepsMatch": true
+    },
+    {
+      "rank": "EWSN",
+      "steps": 939,
+      "seconds": 717.2916666666582,
+      "allSavedLogEntriesMatch": true,
+      "fastStepsMatch": true
+    },
+    {
+      "rank": "SNEW",
+      "steps": 837,
+      "seconds": 639.3749999999948,
+      "allSavedLogEntriesMatch": true,
+      "fastStepsMatch": true
+    },
+    {
+      "rank": "SNWE",
+      "steps": 893,
+      "seconds": 682.1527777777708,
+      "allSavedLogEntriesMatch": true,
+      "fastStepsMatch": true
+    },
+    {
+      "rank": "SENW",
+      "steps": 827,
+      "seconds": 631.7361111111062,
+      "allSavedLogEntriesMatch": true,
+      "fastStepsMatch": true
+    },
+    {
+      "rank": "SEWN",
+      "steps": 809,
+      "seconds": 617.9861111111068,
+      "allSavedLogEntriesMatch": true,
+      "fastStepsMatch": true
+    },
+    {
+      "rank": "SWEN",
+      "steps": 905,
+      "seconds": 691.3194444444371,
+      "allSavedLogEntriesMatch": true,
+      "fastStepsMatch": true
+    },
+    {
+      "rank": "WNSE",
+      "steps": 897,
+      "seconds": 685.2083333333262,
+      "allSavedLogEntriesMatch": true,
+      "fastStepsMatch": true
+    },
+    {
+      "rank": "WENS",
+      "steps": 843,
+      "seconds": 643.9583333333279,
+      "allSavedLogEntriesMatch": true,
+      "fastStepsMatch": true
+    },
+    {
+      "rank": "WESN",
+      "steps": 955,
+      "seconds": 729.5138888888799,
+      "allSavedLogEntriesMatch": true,
+      "fastStepsMatch": true
+    },
+    {
+      "rank": "WSNE",
+      "steps": 943,
+      "seconds": 720.3472222222136,
+      "allSavedLogEntriesMatch": true,
+      "fastStepsMatch": true
+    },
+    {
+      "rank": "WSEN",
+      "steps": 897,
+      "seconds": 685.2083333333262,
+      "allSavedLogEntriesMatch": true,
+      "fastStepsMatch": true
+    }
+  ],
+  "guides": [
+    {
+      "phase": 0,
+      "row": 1,
+      "steps": 23,
+      "meters": 21.083333333333332,
+      "decisionJunctions": 13,
+      "allOutgoingOptionsMarked": true,
+      "exactlyOneExpectedSymbol": true,
+      "legalSymbolFollowerCompletes": true
+    },
+    {
+      "phase": 1,
+      "row": 2,
+      "steps": 42,
+      "meters": 38.5,
+      "decisionJunctions": 16,
+      "allOutgoingOptionsMarked": true,
+      "exactlyOneExpectedSymbol": true,
+      "legalSymbolFollowerCompletes": true
+    },
+    {
+      "phase": 2,
+      "row": 3,
+      "steps": 20,
+      "meters": 18.333333333333332,
+      "decisionJunctions": 9,
+      "allOutgoingOptionsMarked": true,
+      "exactlyOneExpectedSymbol": true,
+      "legalSymbolFollowerCompletes": true
+    },
+    {
+      "phase": 3,
+      "row": 4,
+      "steps": 30,
+      "meters": 27.5,
+      "decisionJunctions": 15,
+      "allOutgoingOptionsMarked": true,
+      "exactlyOneExpectedSymbol": true,
+      "legalSymbolFollowerCompletes": true
+    }
+  ],
+  "guideWalkMeters": 105.41666666666666,
+  "minimumSeconds": 616.458333333329,
+  "maximumSeconds": 729.5138888888799,
+  "emergencyStatus": "PASS_CONCEPT_GRAPH_WITH_RELEASES",
+  "limitations": [
+    "24 direction orders use one nearest-frontier memory policy; does not prove every exploration strategy takes the configured threshold.",
+    "Walking speed and human inference can change outcomes.",
+    "Floor guides require four clearly numbered stage rows and cycle restart after each room. Correctness is from the intended guide entry, not recovery from arbitrary off-route positions.",
+    "Graph emergency release validation is a concept check, not mechanical safety certification."
+  ]
+}

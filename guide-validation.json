@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "stages": [
+    {
+      "phase": 0,
+      "decisionJunctions": 13,
+      "routeSteps": 23,
+      "oneCorrectExpectedSymbolPerDecision": true
+    },
+    {
+      "phase": 1,
+      "decisionJunctions": 16,
+      "routeSteps": 42,
+      "oneCorrectExpectedSymbolPerDecision": true
+    },
+    {
+      "phase": 2,
+      "decisionJunctions": 9,
+      "routeSteps": 20,
+      "oneCorrectExpectedSymbolPerDecision": true
+    },
+    {
+      "phase": 3,
+      "decisionJunctions": 15,
+      "routeSteps": 30,
+      "oneCorrectExpectedSymbolPerDecision": true
+    }
+  ],
+  "physicalDesign": "Four numbered rows on fixed floor plaques, one row per stage; viewer isolates selected row for clarity."
+}

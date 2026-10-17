@@ -1,0 +1,301 @@
+{
+  "status": "PASS_CONSTRAINTS",
+  "sourceSHA256": "4bfa818db193497c01c28394ab6103fea1207aca01d534ef65c586cb47f82a6b",
+  "retainedRoomsDoorsFootprintAndWidths": true,
+  "oneWayDoors": 22,
+  "rotatingWalls": 4,
+  "locks": 2,
+  "retainedEmergencyPanels": 1,
+  "changedEdges": [
+    {
+      "edge": 22,
+      "segment": [
+        2,
+        3,
+        2,
+        4
+      ],
+      "from": 1,
+      "to": 0
+    },
+    {
+      "edge": 24,
+      "segment": [
+        3,
+        3,
+        3,
+        4
+      ],
+      "from": 0,
+      "to": 1
+    },
+    {
+      "edge": 25,
+      "segment": [
+        2,
+        4,
+        3,
+        4
+      ],
+      "from": 0,
+      "to": 1
+    },
+    {
+      "edge": 47,
+      "segment": [
+        3,
+        4,
+        3,
+        5
+      ],
+      "from": 1,
+      "to": 0
+    },
+    {
+      "edge": 55,
+      "segment": [
+        7,
+        4,
+        7,
+        5
+      ],
+      "from": 0,
+      "to": 1
+    },
+    {
+      "edge": 56,
+      "segment": [
+        6,
+        5,
+        7,
+        5
+      ],
+      "from": 1,
+      "to": 0
+    },
+    {
+      "edge": 63,
+      "segment": [
+        11,
+        4,
+        11,
+        5
+      ],
+      "from": 1,
+      "to": 0
+    },
+    {
+      "edge": 76,
+      "segment": [
+        6,
+        5,
+        6,
+        6
+      ],
+      "from": 1,
+      "to": 2
+    },
+    {
+      "edge": 77,
+      "segment": [
+        5,
+        6,
+        6,
+        6
+      ],
+      "from": 3,
+      "to": 0
+    },
+    {
+      "edge": 79,
+      "segment": [
+        6,
+        6,
+        7,
+        6
+      ],
+      "from": 3,
+      "to": 1
+    },
+    {
+      "edge": 81,
+      "segment": [
+        7,
+        6,
+        8,
+        6
+      ],
+      "from": 1,
+      "to": 0
+    },
+    {
+      "edge": 84,
+      "segment": [
+        10,
+        5,
+        10,
+        6
+      ],
+      "from": 0,
+      "to": 1
+    },
+    {
+      "edge": 89,
+      "segment": [
+        1,
+        6,
+        1,
+        7
+      ],
+      "from": 3,
+      "to": 1
+    },
+    {
+      "edge": 99,
+      "segment": [
+        6,
+        6,
+        6,
+        7
+      ],
+      "from": 0,
+      "to": 2
+    },
+    {
+      "edge": 101,
+      "segment": [
+        7,
+        6,
+        7,
+        7
+      ],
+      "from": 0,
+      "to": 1
+    },
+    {
+      "edge": 102,
+      "segment": [
+        6,
+        7,
+        7,
+        7
+      ],
+      "from": 3,
+      "to": 0
+    },
+    {
+      "edge": 108,
+      "segment": [
+        9,
+        7,
+        10,
+        7
+      ],
+      "from": 1,
+      "to": 3
+    },
+    {
+      "edge": 114,
+      "segment": [
+        2,
+        7,
+        2,
+        8
+      ],
+      "from": 0,
+      "to": 3
+    },
+    {
+      "edge": 115,
+      "segment": [
+        1,
+        8,
+        2,
+        8
+      ],
+      "from": 3,
+      "to": 0
+    },
+    {
+      "edge": 120,
+      "segment": [
+        5,
+        7,
+        5,
+        8
+      ],
+      "from": 1,
+      "to": 2
+    },
+    {
+      "edge": 125,
+      "segment": [
+        6,
+        8,
+        7,
+        8
+      ],
+      "from": 1,
+      "to": 2
+    },
+    {
+      "edge": 131,
+      "segment": [
+        9,
+        8,
+        10,
+        8
+      ],
+      "from": 1,
+      "to": 0
+    },
+    {
+      "edge": 133,
+      "segment": [
+        10,
+        8,
+        11,
+        8
+      ],
+      "from": 1,
+      "to": 0
+    },
+    {
+      "edge": 141,
+      "segment": [
+        7,
+        8,
+        7,
+        9
+      ],
+      "from": 2,
+      "to": 1
+    },
+    {
+      "edge": 143,
+      "segment": [
+        9,
+        8,
+        9,
+        9
+      ],
+      "from": 0,
+      "to": 1
+    },
+    {
+      "edge": 144,
+      "segment": [
+        10,
+        8,
+        10,
+        9
+      ],
+      "from": 0,
+      "to": 1
+    }
+  ],
+  "selectedSearchRing": 5,
+  "guideMarks": 111,
+  "minimumSymbolCenterToWallFaceMeters": 0.3782999999999999,
+  "allGuideSquaresClear": true
+}
