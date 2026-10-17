@@ -52,7 +52,7 @@
     },
     {
       "from": "HUONG-DAN.html",
-      "link": "HUONG-DAN-THI-CONG-VA-CO-CHE-CUA-REV-P.md"
+      "link": "HUONG-DAN-THI-CONG-VA-CO-CHE-CUA-REV-P.tex"
     },
     {
       "from": "HUONG-DAN.html",
@@ -164,7 +164,7 @@
     },
     {
       "from": "index.html",
-      "link": "HUONG-DAN-THI-CONG-VA-CO-CHE-CUA-REV-P.md"
+      "link": "HUONG-DAN-THI-CONG-VA-CO-CHE-CUA-REV-P.tex"
     },
     {
       "from": "julius\\final\\REPORT.html",
@@ -288,7 +288,7 @@
     },
     {
       "from": "model-360.html",
-      "link": "HUONG-DAN-THI-CONG-VA-CO-CHE-CUA-REV-P.md"
+      "link": "HUONG-DAN-THI-CONG-VA-CO-CHE-CUA-REV-P.tex"
     }
   ]
 }

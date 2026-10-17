@@ -1,0 +1,1075 @@
+% !TeX program = xelatex
+% UTF-8. Overleaf: choose XeLaTeX; this file is self-contained.
+% Run twice for the table of contents.
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+\documentclass[
+  11pt,
+  a4paper,
+]{article}
+\usepackage{xcolor}
+\usepackage[margin=20mm]{geometry}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+  \setmainfont[BoldFont=texgyretermes-bold.otf,ItalicFont=texgyretermes-italic.otf,BoldItalicFont=texgyretermes-bolditalic.otf]{texgyretermes-regular.otf}
+  \setsansfont[BoldFont=texgyreheros-bold.otf,ItalicFont=texgyreheros-italic.otf,BoldItalicFont=texgyreheros-bolditalic.otf]{texgyreheros-regular.otf}
+  \setmonofont[BoldFont=texgyrecursor-bold.otf,ItalicFont=texgyrecursor-italic.otf,BoldItalicFont=texgyrecursor-bolditalic.otf]{texgyrecursor-regular.otf}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\newenvironment{Shaded}{}{}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\BuiltInTok}[1]{\textcolor[rgb]{0.00,0.50,0.00}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{#1}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{#1}}
+\newcommand{\ImportTok}[1]{\textcolor[rgb]{0.00,0.50,0.00}{\textbf{#1}}}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{#1}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\usepackage{longtable,booktabs,array}
+\usepackage{caption}
+\captionsetup[table]{skip=6pt}
+\newcounter{none} % for unnumbered tables
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+% Portable Vietnamese Unicode document; compile with XeLaTeX or LuaLaTeX.
+\usepackage{fvextra}
+\DefineVerbatimEnvironment{verbatim}{Verbatim}{fontsize=\footnotesize,breaklines=true}
+\usepackage{etoolbox}
+\usepackage{newunicodechar}
+\newunicodechar{↔}{\ensuremath{\leftrightarrow}}
+\AtBeginEnvironment{longtable}{\footnotesize\raggedright}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.22}
+\setlength{\emergencystretch}{3em}
+\setcounter{tocdepth}{2}
+\renewcommand{\contentsname}{Mục lục}
+\AtBeginDocument{\hypersetup{pdftitle={Quỷ Mù REV P - Hướng dẫn dựng vách và làm cơ chế cửa}}}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+% fallback for those not using the hyperref driver hyperxmp:
+\makeatletter
+\@ifundefined{xmpquote}{\newcommand{\xmpquote}[1]{#1}}{}
+\makeatother
+\hypersetup{
+  pdftitle={Quỷ Mù REV P},
+  colorlinks=true,
+  linkcolor={teal},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={teal},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Quỷ Mù REV P}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{Hướng dẫn dựng vách và làm cơ chế cửa}
+\author{}
+\date{17/10/2026}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{3}
+\tableofcontents
+\clearpage
+}
+Bản ngày 17/10/2026. Viết theo từng việc để người mới có thể đọc bản vẽ,
+làm mô hình thử, đặt đúng phụ kiện và phối hợp với thợ lắp bản thật.
+
+\textbf{Bắt đầu bằng một cửa mẫu và một tường xoay mẫu. Chỉ nhân ra toàn
+bộ sau khi hai mẫu hoạt động ổn định và nhả khẩn được.} Bản 3D hiện tại
+là thiết kế bố trí và logic trò chơi; chưa có tính toán kết cấu, bản vẽ
+chế tạo trục, tải neo, khoảng chống kẹp hoặc thiết kế điện an toàn. Phần
+vách cao 3 m, neo chịu lực và cơ cấu chuyển động dùng cho khách cần
+người có chuyên môn chốt thiết kế trước khi làm. Hướng dẫn này không
+biến các thông số mô phỏng thành kích thước cắt vật tư.
+
+\section{1. Mở đúng bộ hồ
+sơ}\label{mux1edf-ux111uxfang-bux1ed9-hux1ed3-sux1a1}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://dam-truong.github.io/quy-mu-rev-p/model-360.html}{Viewer
+  360°, bốn trạng thái và góc nhìn ra làng}.
+\item
+  \href{https://dam-truong.github.io/quy-mu-rev-p/blueprint/index.html}{Mặt
+  bằng và các bản K-01 đến K-08}.
+\item
+  \href{https://dam-truong.github.io/quy-mu-rev-p/HUONG-DAN.html}{Báo
+  cáo thay đổi REV O → REV P}.
+\item
+  \href{https://dam-truong.github.io/quy-mu-rev-p/src/layout.js}{Nguồn
+  layout duy nhất}: dùng để đối chiếu vị trí, chiều cửa, trục xoay.
+\item
+  \href{https://dam-truong.github.io/quy-mu-rev-p/blueprint/K-08-nha-khan.html}{Phương
+  án nhả khẩn E1} và
+  \href{https://dam-truong.github.io/quy-mu-rev-p/emergency-plan.json}{kết
+  quả kiểm tra}.
+\item
+  \href{https://dam-truong.github.io/quy-mu-rev-p/Quy-Mu-REV-P.zip}{Tải
+  trọn bộ ZIP}.
+\end{itemize}
+
+REV P giữ thứ tự \textbf{Làng → Giam → Người canh → Tế → thoát}. Có 22
+cửa một chiều, 4 tường xoay X1--X4, 2 khóa tuyến L1--L2 và 1 panel nhả
+khẩn E1. C01--C06 là mã cửa ra/vào và cửa phòng; không cộng chúng vào số
+22 cửa một chiều. Nhả khẩn là chức năng an toàn của cơ cấu hiện có,
+không phải câu đố mới.
+
+24 bot hoàn thành trong 616,46--729,51 giây ở 1,2 m/s, không cộng thời
+gian chờ hay giải đố. Tuyến biết trước bản đồ chỉ khoảng 105,42 m, tương
+đương 87,85 giây. Mốc trên 600 giây là kết quả phép thử bot, không phải
+thời gian cam kết cho khách. Cả 8 lượt bám tường trái/phải bị lặp; không
+được lấy lượt lặp làm bằng chứng khách sẽ chơi đủ lâu.
+
+\section{2. Hiểu kích thước trước khi mua vật
+tư}\label{hiux1ec3u-kuxedch-thux1b0ux1edbc-trux1b0ux1edbc-khi-mua-vux1eadt-tux1b0}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.2300}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.1800}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.5900}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Mục
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Giá trị trong mô hình
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Cách dùng khi thi công
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Khung bố trí & 11 × 11 m & Là khoảng giữa các đường biên mô hình; phải
+xác nhận cách đặt tim/mặt vách với mặt bằng thật \\
+Lưới & 12 × 12 ô & Đánh số x, z từ 0 đến 11 \\
+Bước ô & 916,667 mm & Khoảng cách giữa hai đường lưới; không phải bề
+rộng cánh cửa \\
+Vách & dày 160 mm, cao 3.000 mm & Bao gồm phần hoàn thiện nếu cần giữ
+đúng hình học \\
+Cửa C01--C06 & tham số rộng 660 mm, cao 2.100 mm & Phải đo lại thông
+thủy sau khung, bản lề, tay nắm và nẹp \\
+Hành lang giữa hai vách song song cách một ô & khoảng 756,667 mm & Chỉ
+là 916,667 − 160; chỗ giao, phụ kiện và cánh mở có thể làm hẹp hơn \\
+\end{longtable}
+}
+
+Gốc ở góc trái trên mặt bằng; x tăng sang phải, z tăng xuống dưới. Tọa
+độ \texttt{{[}x,z{]}} trong bảng cơ cấu là \textbf{ô}, còn tọa độ
+trục/đoạn tường tính bằng \textbf{mét}. Tâm ô \texttt{{[}x,z{]}} là
+\texttt{((x+0,5)\ ×\ 11/12;\ (z+0,5)\ ×\ 11/12)}.
+
+Các đường \texttt{WALLS} là tim vách. Vách biên có bề dày nên bề mặt có
+thể vượt đường tim 0 hoặc 11 m. Không dựng thẳng vào căn phòng thông
+thủy 11 × 11 m rồi tự dịch vách vào trong: cách đó sẽ làm hẹp lối. Đo
+hiện trường và thống nhất đường chuẩn trước; nếu phải đổi bố trí, sửa
+layout và kiểm tra lại.
+
+Chiều rộng trong bản này chưa phải xác nhận đáp ứng yêu cầu thoát nạn
+hoặc tiếp cận của công trình. Người phụ trách công trình phải duyệt kích
+thước sử dụng thực tế trước khi mở cho khách. Không thu hẹp lối để tăng
+độ khó.
+
+\section{3. Làm thử theo thứ tự
+này}\label{luxe0m-thux1eed-theo-thux1ee9-tux1ef1-nuxe0y}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Mô hình bàn tỉ lệ 1:10:} nền 1.100 × 1.100 mm, ô 91,667 mm;
+  dùng bìa/foam nhẹ. Vẽ tim bằng thước, dán mã vách/cửa. Làm bốn tường
+  xoay bằng bìa và chốt nhỏ. Mô hình này chỉ kiểm tra bố trí, không kiểm
+  tra tải trọng hay chống kẹp.
+\item
+  \textbf{Đánh dấu sàn thật:} căng hai đường vuông góc, kiểm tra hai
+  đường chéo, chia lưới. Dán băng màu lên toàn bộ tim vách, cửa và vùng
+  quét X1--X4. Đi thử Làng → Giam → Người canh → Tế → thoát khi chưa
+  dựng vách.
+\item
+  \textbf{Dựng một cửa một chiều mẫu} bằng đúng khung và bộ phụ kiện dự
+  kiến. Thử cả chế độ chơi và nhả khẩn.
+\item
+  \textbf{Dựng một tường xoay mẫu} trong khu thử có rào giới hạn. Đo
+  hành trình, khe, độ võng và lực vận hành; dùng tải hoàn thiện thật sau
+  khi hệ đỡ đã được duyệt.
+\item
+  \textbf{Chốt bản vẽ chế tạo:} ghi rõ kích thước từng khung/cánh, loại
+  vật liệu, tải, phụ kiện, vị trí neo, khe lắp và vùng quét. Chỉ lúc này
+  mới đặt cắt hàng loạt.
+\item
+  \textbf{Dựng vách cố định}, sau đó lắp khung cửa, cơ cấu, nhả khẩn,
+  rồi mới ốp trang trí. Chừa nắp bảo trì nhìn thấy được từ phía nhân
+  viên.
+\item
+  \textbf{Chạy nghiệm thu không có khách}, kiểm tra từng cơ cấu, từng
+  pha và toàn bộ tuyến. Sau đó mới thử vận hành có giám sát.
+\end{enumerate}
+
+\section{4. Chuẩn bị đồ nghề và bảng vật
+tư}\label{chuux1ea9n-bux1ecb-ux111ux1ed3-nghux1ec1-vuxe0-bux1ea3ng-vux1eadt-tux1b0}
+
+Đồ đo/lắp: thước cuộn, thước vuông, máy cân bằng hoặc dây dọi, bút đánh
+dấu, kẹp giữ, khoan theo vật liệu, dụng cụ siết đúng đầu, giá kê và
+thiết bị nâng phù hợp. Cắt/khoan trên bàn làm việc; không giữ cánh nặng
+bằng tay trong lúc bắt trục. Dùng bảo hộ theo công việc và hướng dẫn
+dụng cụ.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.2300}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.1800}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.5900}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Cụm
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Số bộ
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Mỗi bộ cần có
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Cửa một chiều & 22 & Khung chịu lực; cánh nhẹ; bộ bản lề/trục phù hợp;
+bộ tự đóng có chỉnh; cơ cấu hạn chế chiều có thể nhả; chặn hành trình;
+che khe; tay đẩy/nhận diện; cách nhả bằng tay \\
+Tường xoay & 4 & Khung cánh; hệ trục đỡ dưới và dẫn hướng trên đồng
+trục; khung kết cấu đỡ; chặn ở hai vị trí; bộ giữ vị trí có nhả; che
+vùng kẹp; tay vận hành ngoài vùng quét; xác nhận vị trí \\
+Cửa ẩn L1, L2 & 2 & Khung; cánh; bộ ray/con trượt phù hợp; dẫn hướng;
+chống nhấc/chống rơi; chặn cuối; giữ đóng/mở có nhả; tay mở khẩn; chỗ đỗ
+cánh đã kiểm tra \\
+Panel E1 & 1 & Khung; cánh được giữ chống đổ/rơi; cơ cấu mở nhanh bằng
+tay; tay thao tác hai phía; giữ mở; biển nhận diện khi khẩn \\
+Cửa C01--C06 & 6 vị trí & Bộ khung/cánh phù hợp chức năng, mở được theo
+kế hoạch thoát nạn đã duyệt \\
+Vách cố định & Theo bảng vách ở cuối & Khung, liên kết với kết cấu đã
+duyệt, tấm ốp, nẹp bo cạnh, nắp bảo trì \\
+\end{longtable}
+}
+
+Đây là số \textbf{cụm}, chưa phải số bản lề, vít hay mét thép. Không
+chọn phụ kiện chỉ theo cân nặng: nhà cung cấp cần biết chiều cao, chiều
+rộng, bề dày cánh, vị trí trọng tâm và tần suất sử dụng. Ví dụ tài liệu
+bản lề lò xo Ives 3SP1 giới hạn theo cả kích thước cửa lẫn khối lượng;
+bảng của mẫu đó không đủ để suy ra nó chịu được vách cao 3 m.
+\href{https://us.allegion.com/content/dam/allegion-us-2/web-documents-2/InstallInstructions/Ives_3SPI_Spring_Hinge_Installation_Instructions_113960.pdf}{Hướng
+dẫn chính hãng Ives}.
+
+Điền phiếu này cho \textbf{mỗi loại cánh} trước khi đặt hàng:
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.3000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.7000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Thông tin
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Giá trị phải điền
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Mã cánh / vị trí & \ldots{} \\
+Kích thước phủ bì sau hoàn thiện & rộng \ldots{} / cao \ldots{} / dày
+\ldots{} mm \\
+Khối lượng đã cân, gồm ốp và phụ kiện & \ldots{} kg \\
+Trọng tâm so với trục & \ldots{} mm; xác định bằng bản vẽ hoặc đo \\
+Vật liệu và kết cấu nhận neo & \ldots{} \\
+Bộ phụ kiện / tài liệu lắp / giới hạn áp dụng & \ldots{} \\
+Khe quanh cánh và thông thủy nhỏ nhất & \ldots{} mm; có bản vẽ đối
+chiếu \\
+Lực vận hành đo được / tiêu chí được duyệt & \ldots{} N / \ldots{} \\
+Người duyệt kết cấu và cơ khí / ngày & \ldots{} \\
+\end{longtable}
+}
+
+\section{5. Dựng vách cố
+định}\label{dux1ef1ng-vuxe1ch-cux1ed1-ux111ux1ecbnh}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Đối chiếu bảng tim vách ở cuối với K-01. Đánh mã từng đoạn lên sàn và
+  trên khung; nhận diện E1 để không bị ốp thành vách cố định.
+\item
+  Chọn hệ khung và tấm ốp phù hợp công trình. Lớp giả đá chỉ là trang
+  trí, không chịu bản lề hoặc trục. Không dùng lớp trang trí giòn/nặng ở
+  mép cánh chuyển động.
+\item
+  Gia công khung theo bản vẽ đã duyệt. Đo đường chéo để kiểm tra vuông;
+  thử dựng, chống tạm trước khi liên kết. Vách cao 3 m cần hệ ổn định
+  riêng, không chỉ đứng bằng chân nhỏ trên sàn.
+\item
+  Neo vào đúng kết cấu đã khảo sát. Không khoan neo theo khoảng cách tự
+  đoán, không coi trần trang trí là điểm chịu lực. Loại neo, số lượng và
+  chiều sâu do người thiết kế chọn theo nền thực tế.
+\item
+  Lắp thử khung cửa và cơ cấu khi chưa đóng kín hai mặt. Đo lại lối đi
+  tại chỗ hẹp nhất, kể cả tay nắm và nẹp.
+\item
+  Chỉ ốp kín sau khi cửa hoạt động và còn tiếp cận được vít/trục/khóa để
+  bảo trì. Bo các cạnh tiếp xúc; cố định dây và đồ trang trí ngoài vùng
+  quét.
+\end{enumerate}
+
+\section{6. Cửa một chiều --- làm một bộ chuẩn rồi nhân 22
+bộ}\label{cux1eeda-mux1ed9t-chiux1ec1u-luxe0m-mux1ed9t-bux1ed9-chuux1ea9n-rux1ed3i-nhuxe2n-22-bux1ed9}
+
+\textbf{Cách hoạt động:} khách đi từ ô \texttt{from} sang ô \texttt{to}
+thì đẩy qua được; cánh tự trở về. Ở chiều ngược lại, cơ cấu hạn chế
+chiều giữ cửa trong chế độ chơi. Khi nhả khẩn, cả hai phía phải đi qua
+được hoặc cánh được giữ hoàn toàn ngoài lối.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{Chế độ chơi:       ô from  {-}{-}{-} đẩy qua {-}{-}{-}\textgreater{}  ô to}
+\NormalTok{                   khung — trục — cánh — bộ hạn chế chiều}
+\NormalTok{Nhả khẩn:          ô from  \textless{}{-}{-} đi qua {-}{-}{-}\textgreater{}  ô to}
+\NormalTok{                   bộ hạn chế đã nhả; cánh không cản đường}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{Chọn phần cứng trước:} yêu cầu nhà cung cấp một bộ có khả năng
+nhả hạn chế chiều đúng yêu cầu trên. Bản lề chỉ mở một phía cộng nẹp
+chặn cố định sẽ không tự trở thành cửa hai chiều khi cắt điện. Không làm
+chốt tự chế nhả dưới tải mà chưa kiểm tra. Phương án có thể là cơ cấu
+chặn có nhả và trục cho phép mở hai phía, hoặc giữ cánh ở vị trí đỗ hoàn
+toàn thoáng; phải kiểm tra trên mẫu thật và trong mặt bằng.
+
+Các bước lắp:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Dán mũi tên \texttt{from\ →\ to} lên sàn. Chọn cạnh đặt trục và phía
+  đỗ cánh bằng bản vẽ vùng quét; layout mới quy định \textbf{chiều đi},
+  chưa quy định tay bản lề.
+\item
+  Cố định khung chịu lực, kiểm tra đứng và vuông. Đo ô khung hoàn thiện,
+  rồi tính cánh theo khe của bộ phụ kiện; không cắt cánh rộng 916,667 mm
+  chỉ vì đó là bước ô.
+\item
+  Đánh dấu lỗ theo dưỡng của nhà sản xuất. Kê cánh bằng giá; lắp đủ liên
+  kết quy định. Với bản lề liên tục, hướng dẫn Ives yêu cầu lắp đầy đủ
+  các vít được chỉ định; không thay bằng vài vít bắt vào tấm ốp.
+  \href{https://us.allegion.com/content/dam/allegion-us-2/web-files/ives/installation-documents/Ives_700_715_705_711_Continuous_Hinge_Installation_Instructions_116335.pdf}{Tài
+  liệu lắp Ives 700/715/705/711}.
+\item
+  Lắp tự đóng theo đúng tài liệu của bộ đã mua. Chỉnh mức thấp nhất vẫn
+  đóng hết hành trình; không siết mạnh để làm trò chơi khó hơn. Kiểm tra
+  cánh không quật vào người sau khi thả. Mỗi mẫu bản lề có giới hạn
+  chỉnh riêng.
+  \href{https://us.allegion.com/content/dam/allegion-us-2/web-documents-2/InstallInstructions/Ives_3SPI_Spring_Hinge_Installation_Instructions_113960.pdf}{Ví
+  dụ quy trình của Ives 3SP1}.
+\item
+  Lắp hạn chế chiều, chặn hành trình và che khe trục. Chặn phải truyền
+  lực về khung đủ khả năng chịu lực; không để lực đẩy cuối hành trình bẻ
+  bản lề.
+\item
+  Lắp nhả bằng tay tại chỗ và chức năng nhả chung theo thiết kế an toàn.
+  Nhả từ hai phía, kiểm tra khi đang có lực tì lên cánh bằng dụng cụ
+  thử; không dùng người để tạo tình huống kẹt.
+\item
+  Đo lại lối đi khi mở hết. Nếu cánh/khung làm hẹp hành lang hoặc chặn
+  cửa kế bên, dừng để sửa thiết kế, không đổi chiều mũi tên tùy ý.
+\item
+  Ghi mã OW01--OW22, hướng, loại phụ kiện, ngày lắp và kết quả thử. OW
+  là mã thi công theo thứ tự trong \texttt{ONEWAY}; bảng tọa độ ở cuối
+  được sinh từ cùng dữ liệu.
+\end{enumerate}
+
+\section{7. Tường xoay X1--X4 --- quay 90° giữa hai vị
+trí}\label{tux1b0ux1eddng-xoay-x1x4-quay-90-giux1eefa-hai-vux1ecb-truxed}
+
+Tường xoay là cánh vách đổi từ đoạn \texttt{before} sang đoạn
+\texttt{after} quanh \texttt{post}. Trục là đường thẳng đứng; không phải
+tâm cánh. X1/X2 đổi khi mở L1; X3/X4 đổi khi mở L2.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{Nhìn ngang:                     Nhìn từ trên (ví dụ một cánh):}
+\NormalTok{Khung kết cấu đỡ                 vị trí B}
+\NormalTok{       | dẫn hướng trên             |}
+\NormalTok{       |                            |  vùng quét 90°}
+\NormalTok{       | cánh vách                  O{-}{-}{-}{-}{-}{-}{-}{-} vị trí A}
+\NormalTok{       |                            O = trục}
+\NormalTok{       O trục đỡ dưới}
+\NormalTok{Kết cấu nền nhận tải}
+\end{Highlighting}
+\end{Shaded}
+
+Quy trình làm mẫu thủ công:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Từ bảng X ở cuối, đánh dấu trục và hai đường tim cánh trên sàn. Dùng
+  dưỡng bìa bằng \textbf{kích thước phủ bì thực}, gồm nẹp và tay vận
+  hành, xoay thử toàn bộ hành trình. Kiểm tra cả góc cánh, vùng sát
+  trục, vách kế bên và đầu người. Hình 3D ở hai đầu hành trình chưa
+  chứng minh phần cứng không va chạm ở giữa.
+\item
+  Chọn trọn bộ trục dưới chịu tải và dẫn hướng trên tương thích, cùng
+  khung kết cấu nhận tải. Không treo tường cao 3 m bằng bản lề nội thất
+  chọn theo cảm tính. Lắp các trục theo cùng một đường dọi; hệ pivot của
+  Ives cũng yêu cầu phối hợp đúng bộ trục trên/dưới và phụ kiện trung
+  gian.
+  \href{https://us.allegion.com/content/dam/allegion-us-2/web-files/ives/installation-documents/Ives_7244F_7245F_1-1_2in_Intermediate_Pivot_Installation_Instructions_107133.pdf}{Tài
+  liệu lắp pivot Ives}.
+\item
+  Làm cánh khung nhẹ, cứng, không vặn. Kích thước đầu trục, đầu tự do và
+  khe lắp lấy từ thiết kế bộ pivot; đoạn tim dài một ô chưa phải chiều
+  dài cắt cánh. Lắp bằng giá kê/thiết bị nâng; giữ chống đổ đến khi hệ
+  đỡ hoàn chỉnh.
+\item
+  Lắp chặn cơ khí tại A và B, rồi bộ giữ vị trí. Không dùng chính động
+  cơ hoặc ma sát trục làm chặn duy nhất. Cánh phải được giữ chắc khi
+  khách tì vào ở mỗi vị trí.
+\item
+  Bố trí tay điều khiển phía nhân viên, ngoài vùng quét; che khe kẹp và
+  phần truyền động. Không khoét lỗ tay vào vị trí có thể bị ép giữa cánh
+  và vách.
+\item
+  Thử bằng tay trong khu đã cách ly. Đánh dấu điểm nặng/kẹt, kiểm tra độ
+  nghiêng, võng, rung và va chạm. Không tăng lực để vượt chỗ kẹt; tìm
+  nguyên nhân và sửa.
+\item
+  Thử đúng trình tự nhả E1 và 22 cửa một chiều trước khi chuyển vị trí.
+  Sau khi cánh được giữ ở B mới xác nhận pha mới.
+\end{enumerate}
+
+\textbf{Bản có động cơ là một hạng mục riêng.} Cần thiết kế bảo vệ vùng
+quét, phát hiện kẹt, giám sát vị trí/nhả, dừng khẩn và điều khiển an
+toàn bởi người có chuyên môn. Không dùng Arduino, timer hay cảm biến
+trang trí làm lớp bảo vệ duy nhất. Chưa có sơ đồ điện hoặc tải cơ khí
+được duyệt thì chỉ thử mẫu thủ công trong vùng cách ly; không chạy tự
+động cạnh khách. Thời gian hoạt cảnh trong viewer không phải tốc độ xoay
+an toàn đã xác định.
+
+\section{8. Cửa ẩn L1, L2 và cửa
+phòng}\label{cux1eeda-ux1ea9n-l1-l2-vuxe0-cux1eeda-phuxf2ng}
+
+L1 mở sau Giam để tiếp cận Người canh; L2 mở sau Người canh để tiếp cận
+Tế. Chọn phương án mẫu \textbf{trượt bằng tay} với bộ ray đồng bộ có tải
+phù hợp. Ray có thể đỡ dưới hoặc treo trên tùy thiết kế; nếu treo, kết
+cấu đỡ phía trên phải được tính tải.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Đánh dấu đoạn đóng từ bảng L. Vẽ cả cánh khi đóng, khi mở và đường
+  trượt.
+\item
+  Xác nhận có \textbf{chỗ đỗ đủ cho toàn bộ cánh} và phụ kiện trong vùng
+  cho phép. Layout hiện chưa thiết kế hốc giấu cánh. Không tự mở hốc vào
+  phòng, vượt khung 11 × 11 m hoặc làm dày vách lấn hành lang. Nếu không
+  có chỗ đỗ, cần thiết kế lại cơ cấu và kiểm tra layout trước khi chế
+  tạo.
+\item
+  Lắp ray vào kết cấu chịu lực, cân thẳng theo hướng dẫn bộ ray; lắp
+  chặn cuối trước khi thả con trượt chạy tự do.
+\item
+  Lắp chống nhấc/chống rơi và dẫn hướng; không bỏ dẫn hướng dưới chỉ để
+  cửa nhìn đẹp. Lắp cánh rồi kiểm tra toàn hành trình không lệch hoặc tự
+  trôi.
+\item
+  Lắp giữ đóng/giữ mở và tay nhả từ hai phía. Giấu đường ghép bằng hoa
+  văn/sơn, không dùng nẹp bắc qua khe làm kẹt cửa.
+\item
+  Thử mở bằng tay khi mất điện và khi điều khiển trò chơi hỏng. Không
+  dùng ổ khóa cần chìa riêng làm cách thoát duy nhất.
+\end{enumerate}
+
+C03--C05 giữ vị trí cửa phòng theo layout. C01 là lối vào; C02 là cổng
+làng vào mê cung; C06 là cửa thoát trò chơi mở ở S3. Việc C06 bị khóa
+trong mô phỏng \textbf{không cho phép khóa chặn thoát người trong công
+trình thật}: cách mở khẩn và lối ra cuối cùng phải hoạt động độc lập với
+tiến độ câu đố, được duyệt cùng phương án thoát nạn.
+
+\section{9. E1 và cách nhả
+khẩn}\label{e1-vuxe0-cuxe1ch-nhux1ea3-khux1ea9n}
+
+E1 là panel trên đoạn \texttt{x\ =\ 2,75\ m}, từ \texttt{z\ =\ 6,416667}
+đến \texttt{7,333333\ m}, nối ô \texttt{{[}2,7{]}\ ↔\ {[}3,7{]}}. Bình
+thường đóng như vách. Làm cánh có hệ đỡ, mở/giữ mở được từ hai phía;
+không dùng tấm nặng tháo rời phải nhấc ra mới đi qua. Vị trí bản lề và
+chỗ đỗ cần được kiểm tra riêng để cánh mở không chiếm đường cứu hộ.
+
+\textbf{Nhả khẩn phải giải phóng lối đi. Dừng động cơ thôi chưa đủ.} Khi
+chuyển pha, kiểm tra đồ thị hiện tại giả định E1 mở và cả 22 cửa một
+chiều cho đi hai chiều. Nếu bản thật không làm được điều đó, kết quả
+kiểm tra đường về cổng không còn áp dụng.
+
+Trình tự chuyển S0 → S1 hoặc S1 → S2:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Dừng diễn/đuổi; xác nhận không có người hoặc vật trong toàn vùng
+  chuyển động và vị trí đỗ cánh.
+\item
+  Mở E1, nhả hạn chế chiều của 22 cửa; xác nhận thực tế đã thông. Nhả
+  bằng tay tuần tự chỉ dùng khi khu thử đã cách ly; vận hành có khách
+  cần phương án nhả chung được thiết kế và kiểm chứng.
+\item
+  Giữ trạng thái nhả trong suốt chuyển động. Chỉ điều khiển cặp tường
+  tương ứng khi điều kiện an toàn còn đúng; mất xác nhận thì dừng và giữ
+  lối thoát.
+\item
+  Khi tường đến vị trí cuối, xác nhận chặn/giữ đã vào đúng chỗ rồi mới
+  khôi phục trạng thái chơi.
+\item
+  Nếu có sự cố: dừng chuyển động, giữ các lối nhả, hướng người ra ngoài
+  theo kế hoạch đã duyệt. Chỉ reset sau khi tìm và xử lý nguyên nhân;
+  reset không được tự làm tường chạy lại. Nguyên tắc này phù hợp giải
+  thích của Pilz về dừng khẩn: reset có chủ ý và không tự khởi động lại.
+  \href{https://www.pilz.com/en-IE/support/faq/standards/articles/180045}{Pilz
+  --- emergency stop reset}.
+\end{enumerate}
+
+Kiểm tra phần mềm đã xét trường hợp cả vị trí tường cũ và mới cùng bị
+chặn, rồi tìm đường về C02. Nó chưa mô phỏng đầy đủ cơ thể người, vùng
+quét liên tục, khói, tải đám đông, thời gian nhả hoặc tình huống linh
+kiện hỏng. C02 cũng chưa phải bằng chứng đã đi ra nơi an toàn bên ngoài;
+phải kiểm tra tiếp đường qua làng/C01 và lối thoát được duyệt.
+
+\section{10. Bảng vận hành
+S0--S3}\label{bux1ea3ng-vux1eadn-huxe0nh-s0s3}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.0600}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.2200}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.0800}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.0800}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1600}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1600}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.2400}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Pha
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Điều kiện
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+L1
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+L2
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+X1, X2
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+X3, X4
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+C06 trong trò chơi
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+S0 & Vừa ra làng & Đóng & Đóng & Before & Before & Đóng \\
+S1 & Xong Giam & Mở & Đóng & After & Before & Đóng \\
+S2 & Xong Người canh & Mở & Mở & After & After & Đóng \\
+S3 & Xong Tế & Mở & Mở & After & After & Mở \\
+\end{longtable}
+}
+
+Reset về S0 khi đã đưa hết người ra ngoài; áp dụng lại trình tự cách ly
+và nhả trước khi xoay ngược. Không reset giữa lượt chơi chỉ để đưa cửa
+về chỗ cũ.
+
+\section{11. Nghiệm thu, bảo trì và xử lý
+lỗi}\label{nghiux1ec7m-thu-bux1ea3o-truxec-vuxe0-xux1eed-luxfd-lux1ed7i}
+
+In bảng này; ghi \textbf{Đạt / Không đạt / Người thử / Ngày}. Một mục
+không đạt thì không đưa cụm liên quan vào phục vụ. Lịch kiểm tra cơ khí
+và điện tuân theo nhà sản xuất và đánh giá sử dụng thực tế; số lần thử
+tùy ý không thay thế nghiệm thu.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.3000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.7000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Việc thử
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Điều kiện đạt
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Kích thước và chiều cửa & Đúng bảng tọa độ; thông thủy thực tế và vùng
+quét được duyệt; không thêm cơ cấu hoặc lấn phòng \\
+Khung, neo, trục & Đã kiểm tra theo thiết kế; không lỏng, võng, lệch hay
+cọ ở toàn hành trình \\
+Từng OW01--OW22 & Đúng chiều khi chơi; tự đóng êm; nhả tại chỗ và nhả
+chung đều giải phóng được lối \\
+X1--X4 tại hai vị trí & Đúng trục/đoạn; giữ ổn định; không cản lối dự
+kiến \\
+X1--X4 giữa hành trình & Đã đo vùng quét thực; bảo vệ chống tiếp cận/kẹp
+và phản ứng dừng được kiểm chứng bằng dụng cụ thử phù hợp \\
+L1/L2 & Đúng thứ tự; không trượt khỏi ray; chỗ đỗ không chiếm phòng/lối;
+mở khẩn được \\
+E1 & Mở từ hai phía; giữ mở; không cần nhấc vật nặng, chìa hoặc tháo
+vít \\
+Mất điện / mất tín hiệu / nút khẩn & Không phát sinh chuyển động; vẫn mở
+thoát được; reset không tự chạy lại \\
+Đi toàn tuyến ở S0--S3 & Đúng trình tự, có đường về cổng; kiểm tra tiếp
+đến lối ra an toàn thật \\
+Biển và dấu dẫn & Nhìn được, không nằm sau cánh/vách hoặc nhầm với dấu
+thoát nạn \\
+Thử sau hoàn thiện & Sơn/nẹp/đạo cụ không làm tăng lực, gây kẹt, che
+thao tác hoặc cản cảm biến \\
+\end{longtable}
+}
+
+Trước mỗi ca: kiểm tra lối ra, E1, nhả một chiều, chốt giữ tường, vật lạ
+trên ray và liên lạc với người vận hành. Nếu phát hiện lỗi thì dừng sử
+dụng cụm lỗi, không buộc dây hoặc chêm tạm để tiếp tục chơi.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.3000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.7000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Hiện tượng
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Kiểm tra theo thứ tự
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Cửa một chiều không tự đóng & Vật cản → lệch khung/trục → cọ sàn/nẹp →
+cài đặt tự đóng theo tài liệu \\
+Cửa đóng quá mạnh & Dừng thử → kiểm tra bộ tự đóng/giảm chấn → chỉnh
+theo tài liệu → đo lại lực \\
+Tường xoay nặng một đoạn & Dừng → kiểm tra đồng trục, nền, võng cánh và
+va chạm; không tăng công suất để ép qua \\
+Cửa trượt bị nghiêng & Cách ly → kê/giữ cánh an toàn → kiểm tra ray, con
+trượt, chống nhấc và dẫn hướng \\
+Nhả nhưng vẫn không qua được & Kiểm tra chặn cố định, tay bản lề, vị trí
+đỗ và cửa kế bên; sửa cơ khí rồi thử lại \\
+Mất điện còn khóa người & Không vận hành; sửa phương án nhả độc lập
+trước khi thử lại \\
+\end{longtable}
+}
+
+Sau mọi thay đổi về vách, chiều cửa, vị trí trục, vùng đỗ hoặc bề rộng
+lối: cập nhật \texttt{src/layout.js}/nguồn sinh tương ứng, chạy lại
+pipeline kiểm tra rồi nghiệm thu thực tế phần bị ảnh hưởng. Thay phụ
+kiện cùng chức năng vẫn phải kiểm tra lại khe, lực, tải và nhả khẩn.
+
+\section{12. Bảng tọa độ lấy trực tiếp từ REV
+P}\label{bux1ea3ng-tux1ecda-ux111ux1ed9-lux1ea5y-trux1ef1c-tiux1ebfp-tux1eeb-rev-p}
+
+Các bảng dưới được sinh tự động từ layout đã kiểm tra. Giữ nguyên mã để
+trao đổi với thợ. Số làm tròn phục vụ đọc; dùng nguồn layout khi triển
+khai đo đạc. \textbf{Bảng tim vách không phải bảng cắt:} đầu nối, bề
+dày, trục, khung, khe và E1 phải được triển khai thành chi tiết trước
+khi đặt vật tư.
+
+SHA-256 layout:
+\nolinkurl{4bfa818db193497c01c28394ab6103fea1207aca01d534ef65c586cb47f82a6b}.
+
+\subsection{12.1. Cửa ra/vào và cửa phòng
+(mét)}\label{cux1eeda-ravuxe0o-vuxe0-cux1eeda-phuxf2ng-muxe9t}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.1000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2900}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2200}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.3900}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Mã
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Tâm x; z (m)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Trục đoạn cửa
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Chức năng
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+C01 & (0.0000; 9.6250) & z & Vào làng \\
+C02 & (4.1250; 8.2500) & x & Làng → mê cung \\
+C03 & (10.0833; 0.4583) & z & Giam \\
+C04 & (10.5417; 8.2500) & x & Người canh \\
+C05 & (1.8333; 2.2917) & z & Tế \\
+C06 & (11.0000; 0.4583) & z & Thoát trò chơi \\
+\end{longtable}
+}
+
+Trục x: đoạn cửa nằm ngang mặt bằng; trục z: đoạn cửa nằm dọc. Đây không
+phải ký hiệu tay bản lề.
+
+\subsection{12.2. Cửa một chiều}\label{cux1eeda-mux1ed9t-chiux1ec1u}
+
+Đoạn đặt cửa là ranh giới chung của hai ô. Bảng ghi đoạn tim, chưa trừ
+khung/khe.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.1000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.1400}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.1400}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.6200}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Mã
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Đi từ ô
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Sang ô
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Đoạn ranh giới (m)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+OW01 & {[}2, 5{]} & {[}2, 4{]} & (1.8333; 4.5833) → (2.7500; 4.5833) \\
+OW02 & {[}3, 5{]} & {[}3, 4{]} & (2.7500; 4.5833) → (3.6667; 4.5833) \\
+OW03 & {[}8, 4{]} & {[}7, 4{]} & (7.3333; 3.6667) → (7.3333; 4.5833) \\
+OW04 & {[}8, 5{]} & {[}8, 4{]} & (7.3333; 4.5833) → (8.2500; 4.5833) \\
+OW05 & {[}2, 6{]} & {[}2, 5{]} & (1.8333; 5.5000) → (2.7500; 5.5000) \\
+OW06 & {[}3, 6{]} & {[}3, 5{]} & (2.7500; 5.5000) → (3.6667; 5.5000) \\
+OW07 & {[}4, 5{]} & {[}5, 5{]} & (4.5833; 4.5833) → (4.5833; 5.5000) \\
+OW08 & {[}4, 6{]} & {[}4, 5{]} & (3.6667; 5.5000) → (4.5833; 5.5000) \\
+OW09 & {[}5, 5{]} & {[}6, 5{]} & (5.5000; 4.5833) → (5.5000; 5.5000) \\
+OW10 & {[}9, 6{]} & {[}9, 5{]} & (8.2500; 5.5000) → (9.1667; 5.5000) \\
+OW11 & {[}1, 7{]} & {[}1, 6{]} & (0.9167; 6.4167) → (1.8333; 6.4167) \\
+OW12 & {[}5, 6{]} & {[}6, 6{]} & (5.5000; 5.5000) → (5.5000; 6.4167) \\
+OW13 & {[}5, 7{]} & {[}5, 6{]} & (4.5833; 6.4167) → (5.5000; 6.4167) \\
+OW14 & {[}7, 7{]} & {[}7, 6{]} & (6.4167; 6.4167) → (7.3333; 6.4167) \\
+OW15 & {[}9, 7{]} & {[}9, 6{]} & (8.2500; 6.4167) → (9.1667; 6.4167) \\
+OW16 & {[}2, 7{]} & {[}1, 7{]} & (1.8333; 6.4167) → (1.8333; 7.3333) \\
+OW17 & {[}2, 8{]} & {[}2, 7{]} & (1.8333; 7.3333) → (2.7500; 7.3333) \\
+OW18 & {[}4, 7{]} & {[}5, 7{]} & (4.5833; 6.4167) → (4.5833; 7.3333) \\
+OW19 & {[}5, 7{]} & {[}5, 8{]} & (4.5833; 7.3333) → (5.5000; 7.3333) \\
+OW20 & {[}6, 7{]} & {[}7, 7{]} & (6.4167; 6.4167) → (6.4167; 7.3333) \\
+OW21 & {[}6, 7{]} & {[}6, 8{]} & (5.5000; 7.3333) → (6.4167; 7.3333) \\
+OW22 & {[}5, 8{]} & {[}4, 8{]} & (4.5833; 7.3333) → (4.5833; 8.2500) \\
+\end{longtable}
+}
+
+\subsection{12.3. Tường xoay}\label{tux1b0ux1eddng-xoay}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.0700}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1900}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.3200}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.3200}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Mã
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Khi mở
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Trục x; z (m)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Before --- đoạn tim (m)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+After --- đoạn tim (m)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+X1 & L1 & (10.0833; 6.4167) & (9.1667; 6.4167) → (10.0833; 6.4167) &
+(10.0833; 5.5000) → (10.0833; 6.4167) \\
+X2 & L1 & (8.2500; 6.4167) & (8.2500; 6.4167) → (8.2500; 7.3333) &
+(7.3333; 6.4167) → (8.2500; 6.4167) \\
+X3 & L2 & (0.9167; 2.7500) & (0.9167; 2.7500) → (1.8333; 2.7500) &
+(0.9167; 2.7500) → (0.9167; 3.6667) \\
+X4 & L2 & (3.6667; 7.3333) & (3.6667; 6.4167) → (3.6667; 7.3333) &
+(2.7500; 7.3333) → (3.6667; 7.3333) \\
+\end{longtable}
+}
+
+X4 của REV P đặt trục tại (3,6667; 7,3333) m; không lấy hướng X4 từ REV
+O để lắp. Chọn cung quay 90° nối hai vị trí rồi kiểm tra vùng quét bằng
+cánh thật; không quay vòng dài 270°.
+
+\subsection{12.4. Khóa tuyến và panel
+E1}\label{khuxf3a-tuyux1ebfn-vuxe0-panel-e1}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.0800}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.1900}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.4600}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2700}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Mã
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Hai ô
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Đoạn tim (m)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Mở khi
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+L1 & {[}10, 8{]} ↔ {[}11, 8{]} & (10.0833; 7.3333) → (10.0833; 8.2500) &
+Xong Giam \\
+L2 & {[}1, 4{]} ↔ {[}1, 5{]} & (0.9167; 4.5833) → (1.8333; 4.5833) &
+Xong Người canh \\
+E1 & {[}2, 7{]} ↔ {[}3, 7{]} & (2.7500; 6.4167) → (2.7500; 7.3333) & Nhả
+khẩn / trước mọi chuyển pha có xoay \\
+\end{longtable}
+}
+
+\subsection{12.5. Tim các đoạn
+vách}\label{tim-cuxe1c-ux111oux1ea1n-vuxe1ch}
+
+Mã W dưới đây dùng để đánh dấu thi công theo thứ tự \texttt{WALLS}. Một
+đoạn dài có thể chia nhiều module theo thiết kế khung. \textbf{Đoạn W có
+E1 phải được thay bằng panel có thể mở, không xây kín.} Các trục
+xoay/cửa được liệt kê riêng, không cộng nhầm vào vách cố định.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.0800}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.4600}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.1500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.3100}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Mã
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Tim đầu → cuối (m)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Chiều dài tim (m)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Ghi chú
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+W01 & (0.0000; 0.0000) → (11.0000; 0.0000) & 11.0000 & Triển khai đầu
+nối trước khi cắt \\
+W02 & (0.9167; 0.9167) → (1.8333; 0.9167) & 0.9166 & Triển khai đầu nối
+trước khi cắt \\
+W03 & (0.9167; 1.8333) → (1.8333; 1.8333) & 0.9166 & Triển khai đầu nối
+trước khi cắt \\
+W04 & (6.4167; 1.8333) → (10.0833; 1.8333) & 3.6666 & Triển khai đầu nối
+trước khi cắt \\
+W05 & (1.8333; 2.7500) → (6.4167; 2.7500) & 4.5834 & Triển khai đầu nối
+trước khi cắt \\
+W06 & (9.1667; 2.7500) → (10.0833; 2.7500) & 0.9166 & Triển khai đầu nối
+trước khi cắt \\
+W07 & (3.6667; 3.6667) → (4.5833; 3.6667) & 0.9166 & Triển khai đầu nối
+trước khi cắt \\
+W08 & (6.4167; 3.6667) → (9.1667; 3.6667) & 2.7500 & Triển khai đầu nối
+trước khi cắt \\
+W09 & (4.5833; 4.5833) → (6.4167; 4.5833) & 1.8334 & Triển khai đầu nối
+trước khi cắt \\
+W10 & (9.1667; 4.5833) → (10.0833; 4.5833) & 0.9166 & Triển khai đầu nối
+trước khi cắt \\
+W11 & (0.0000; 5.5000) → (0.9167; 5.5000) & 0.9167 & Triển khai đầu nối
+trước khi cắt \\
+W12 & (4.5833; 5.5000) → (5.5000; 5.5000) & 0.9167 & Triển khai đầu nối
+trước khi cắt \\
+W13 & (6.4167; 5.5000) → (7.3333; 5.5000) & 0.9166 & Triển khai đầu nối
+trước khi cắt \\
+W14 & (9.1667; 5.5000) → (10.0833; 5.5000) & 0.9166 & Triển khai đầu nối
+trước khi cắt \\
+W15 & (2.7500; 6.4167) → (3.6667; 6.4167) & 0.9167 & Triển khai đầu nối
+trước khi cắt \\
+W16 & (5.5000; 6.4167) → (6.4167; 6.4167) & 0.9167 & Triển khai đầu nối
+trước khi cắt \\
+W17 & (10.0833; 6.4167) → (11.0000; 6.4167) & 0.9167 & Triển khai đầu
+nối trước khi cắt \\
+W18 & (0.9167; 7.3333) → (1.8333; 7.3333) & 0.9166 & Triển khai đầu nối
+trước khi cắt \\
+W19 & (3.6667; 7.3333) → (4.5833; 7.3333) & 0.9166 & Triển khai đầu nối
+trước khi cắt \\
+W20 & (6.4167; 7.3333) → (7.3333; 7.3333) & 0.9166 & Triển khai đầu nối
+trước khi cắt \\
+W21 & (8.2500; 7.3333) → (10.0833; 7.3333) & 1.8333 & Triển khai đầu nối
+trước khi cắt \\
+W22 & (0.0000; 8.2500) → (3.6667; 8.2500) & 3.6667 & Triển khai đầu nối
+trước khi cắt \\
+W23 & (4.5833; 8.2500) → (10.0833; 8.2500) & 5.5000 & Triển khai đầu nối
+trước khi cắt \\
+W24 & (0.0000; 11.0000) → (11.0000; 11.0000) & 11.0000 & Triển khai đầu
+nối trước khi cắt \\
+W25 & (0.0000; 0.0000) → (0.0000; 9.1667) & 9.1667 & Triển khai đầu nối
+trước khi cắt \\
+W26 & (0.0000; 10.0833) → (0.0000; 11.0000) & 0.9167 & Triển khai đầu
+nối trước khi cắt \\
+W27 & (0.9167; 1.8333) → (0.9167; 2.7500) & 0.9167 & Triển khai đầu nối
+trước khi cắt \\
+W28 & (0.9167; 3.6667) → (0.9167; 4.5833) & 0.9166 & Triển khai đầu nối
+trước khi cắt \\
+W29 & (0.9167; 6.4167) → (0.9167; 7.3333) & 0.9166 & Triển khai đầu nối
+trước khi cắt \\
+W30 & (1.8333; 0.0000) → (1.8333; 1.8333) & 1.8333 & Triển khai đầu nối
+trước khi cắt \\
+W31 & (1.8333; 2.7500) → (1.8333; 3.6667) & 0.9167 & Triển khai đầu nối
+trước khi cắt \\
+W32 & (1.8333; 4.5833) → (1.8333; 6.4167) & 1.8334 & Triển khai đầu nối
+trước khi cắt \\
+W33 & (2.7500; 3.6667) → (2.7500; 5.5000) & 1.8333 & Triển khai đầu nối
+trước khi cắt \\
+W34 & (2.7500; 6.4167) → (2.7500; 7.3333) & 0.9166 & E1 --- panel nhả,
+bình thường đóng \\
+W35 & (3.6667; 3.6667) → (3.6667; 5.5000) & 1.8333 & Triển khai đầu nối
+trước khi cắt \\
+W36 & (4.5833; 3.6667) → (4.5833; 4.5833) & 0.9166 & Triển khai đầu nối
+trước khi cắt \\
+W37 & (4.5833; 5.5000) → (4.5833; 6.4167) & 0.9167 & Triển khai đầu nối
+trước khi cắt \\
+W38 & (5.5000; 2.7500) → (5.5000; 3.6667) & 0.9167 & Triển khai đầu nối
+trước khi cắt \\
+W39 & (5.5000; 7.3333) → (5.5000; 8.2500) & 0.9167 & Triển khai đầu nối
+trước khi cắt \\
+W40 & (6.4167; 0.0000) → (6.4167; 2.7500) & 2.7500 & Triển khai đầu nối
+trước khi cắt \\
+W41 & (7.3333; 1.8333) → (7.3333; 3.6667) & 1.8334 & Triển khai đầu nối
+trước khi cắt \\
+W42 & (7.3333; 4.5833) → (7.3333; 7.3333) & 2.7500 & Triển khai đầu nối
+trước khi cắt \\
+W43 & (8.2500; 2.7500) → (8.2500; 4.5833) & 1.8333 & Triển khai đầu nối
+trước khi cắt \\
+W44 & (8.2500; 5.5000) → (8.2500; 6.4167) & 0.9167 & Triển khai đầu nối
+trước khi cắt \\
+W45 & (8.2500; 8.2500) → (8.2500; 11.0000) & 2.7500 & Triển khai đầu nối
+trước khi cắt \\
+W46 & (9.1667; 1.8333) → (9.1667; 2.7500) & 0.9167 & Triển khai đầu nối
+trước khi cắt \\
+W47 & (9.1667; 6.4167) → (9.1667; 7.3333) & 0.9166 & Triển khai đầu nối
+trước khi cắt \\
+W48 & (10.0833; 0.9167) → (10.0833; 1.8333) & 0.9166 & Triển khai đầu
+nối trước khi cắt \\
+W49 & (10.0833; 2.7500) → (10.0833; 4.5833) & 1.8333 & Triển khai đầu
+nối trước khi cắt \\
+W50 & (10.0833; 6.4167) → (10.0833; 7.3333) & 0.9166 & Triển khai đầu
+nối trước khi cắt \\
+W51 & (11.0000; 0.9167) → (11.0000; 11.0000) & 10.0833 & Triển khai đầu
+nối trước khi cắt \\
+\end{longtable}
+}
+
+\subsection{12.6. Phiếu bàn giao từng
+cụm}\label{phiux1ebfu-buxe0n-giao-tux1eebng-cux1ee5m}
+
+\begin{itemize}
+\tightlist
+\item
+  Mã cụm: \ldots; người lắp: \ldots; ngày: \ldots{}
+\item
+  Bản vẽ chế tạo và tài liệu phụ kiện đính kèm: \ldots{}
+\item
+  Kích thước/khối lượng thực tế: \ldots{}
+\item
+  Chiều mở/vùng quét/vị trí đỗ đã đối chiếu: \ldots{}
+\item
+  Thử chế độ chơi: \ldots; thử nhả khẩn/mất điện: \ldots{}
+\item
+  Lỗi còn lại và cách xử lý: \ldots{}
+\item
+  Người kiểm tra chấp nhận cho sử dụng: \ldots{}
+\end{itemize}
+
+Giữ phiếu cạnh hồ sơ bảo trì. Nếu thay đổi phần cứng, cập nhật phiếu
+thay vì dựa vào ảnh chụp bản cũ.
+
+\end{document}

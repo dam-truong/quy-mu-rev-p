@@ -14,7 +14,7 @@
   "sourceSHA256": "4bfa818db193497c01c28394ab6103fea1207aca01d534ef65c586cb47f82a6b",
   "hashes": {
     "src/layout.js": "4bfa818db193497c01c28394ab6103fea1207aca01d534ef65c586cb47f82a6b",
-    "model-360.html": "fec2e0201844834aa6b60b5b27d8634e58e86a116c61440fec4364a627f1caa5",
+    "model-360.html": "317bbcd2b2aa4d3e32136d1d8bee05a8bc1ba01011571e5c3fe7321cb6c7265a",
     "julius/final/REPORT.html": "469f645d06c882451cc950655fa1def22e016991b12b72dbf33d9afc12a4e74f",
     "julius/final/report.json": "8e87424d9a545b3aabcee1294ab321e464e0665f396019c4cf94ad5870202ebe",
     "julius/final/independent-review.json": "e24f35820b31a1ff756660ed6a8fbc440aacb9959384cd67ef77f6fa597a220a",
@@ -27,11 +27,12 @@
     "Quy-Mu-REV-P-S2.glb": "db589436a150364c756f2a8b55b9a8c01efd5dad3deaeacbead87ead3293f1ee",
     "Quy-Mu-REV-P-S3.glb": "2af8396797e8c897976886ab5f45950aac371e40dc66c822e0360b43853507a4",
     "HUONG-DAN-THI-CONG-VA-CO-CHE-CUA-REV-P.md": "0889cacaf6a4c7f6cec67839bf9850a34efe38f5da905ea41d63be54f1653576",
-    "index.html": "fec2e0201844834aa6b60b5b27d8634e58e86a116c61440fec4364a627f1caa5",
-    "HUONG-DAN.html": "f59c9230b43a6d6faffd643715e35ede3475eb2e0f1d631bb258e7c5dee6170f"
+    "index.html": "317bbcd2b2aa4d3e32136d1d8bee05a8bc1ba01011571e5c3fe7321cb6c7265a",
+    "HUONG-DAN.html": "75c5526e83f5761cd651d3940740732d9a0bdfd0a43a6d0eeefc16dc7649378b",
+    "HUONG-DAN-THI-CONG-VA-CO-CHE-CUA-REV-P.tex": "2b8377ec1f701bfeb22845243bca582fc68574f07a56fbab9e19342f8d66b6b3"
   },
   "hosting": "GitHub Pages",
   "url": "https://dam-truong.github.io/quy-mu-rev-p/",
   "repository": "https://github.com/dam-truong/quy-mu-rev-p",
-  "constructionGuide": "HUONG-DAN-THI-CONG-VA-CO-CHE-CUA-REV-P.md"
+  "constructionGuide": "HUONG-DAN-THI-CONG-VA-CO-CHE-CUA-REV-P.tex"
 }
