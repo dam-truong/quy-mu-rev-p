@@ -14,8 +14,8 @@
   "sourceSHA256": "4bfa818db193497c01c28394ab6103fea1207aca01d534ef65c586cb47f82a6b",
   "hashes": {
     "src/layout.js": "4bfa818db193497c01c28394ab6103fea1207aca01d534ef65c586cb47f82a6b",
-    "model-360.html": "75a3f7488696867bac640799fb2cb63cb88f99d21f752401ec6d2019e1bf749a",
-    "julius/final/REPORT.html": "03fb7c9e5c98c3415a3b53698eeea5cecf4fee986cd65e80e33da97666587af3",
+    "model-360.html": "fec2e0201844834aa6b60b5b27d8634e58e86a116c61440fec4364a627f1caa5",
+    "julius/final/REPORT.html": "469f645d06c882451cc950655fa1def22e016991b12b72dbf33d9afc12a4e74f",
     "julius/final/report.json": "8e87424d9a545b3aabcee1294ab321e464e0665f396019c4cf94ad5870202ebe",
     "julius/final/independent-review.json": "e24f35820b31a1ff756660ed6a8fbc440aacb9959384cd67ef77f6fa597a220a",
     "constraint-validation.json": "b016b9c668267cf7040981c078ded250389f058fe13f093869c58e50330d7297",
@@ -27,8 +27,8 @@
     "Quy-Mu-REV-P-S2.glb": "db589436a150364c756f2a8b55b9a8c01efd5dad3deaeacbead87ead3293f1ee",
     "Quy-Mu-REV-P-S3.glb": "2af8396797e8c897976886ab5f45950aac371e40dc66c822e0360b43853507a4",
     "HUONG-DAN-THI-CONG-VA-CO-CHE-CUA-REV-P.md": "0889cacaf6a4c7f6cec67839bf9850a34efe38f5da905ea41d63be54f1653576",
-    "index.html": "75a3f7488696867bac640799fb2cb63cb88f99d21f752401ec6d2019e1bf749a",
-    "HUONG-DAN.html": "805a358c6e2afd4af1a894cbce9bfd227fd8c273d0a9cba5776aae96e6cc2282"
+    "index.html": "fec2e0201844834aa6b60b5b27d8634e58e86a116c61440fec4364a627f1caa5",
+    "HUONG-DAN.html": "f59c9230b43a6d6faffd643715e35ede3475eb2e0f1d631bb258e7c5dee6170f"
   },
   "hosting": "GitHub Pages",
   "url": "https://dam-truong.github.io/quy-mu-rev-p/",
